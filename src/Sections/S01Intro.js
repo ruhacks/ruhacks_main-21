@@ -14,7 +14,7 @@ export default class S01Intro extends Component {
      * Use position absolute to position the dives
      */
     renderContainerBackground() {
-        return <div>this is 1 background</div>;
+        return <div>this is 1 container background</div>;
     }
     render() {
         return (

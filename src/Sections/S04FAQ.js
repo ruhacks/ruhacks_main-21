@@ -14,7 +14,7 @@ export default class S04FAQ extends Component {
      * Use position absolute to position the dives
      */
     renderContainerBackground() {
-        return <div>this is 4 background</div>;
+        return <div>this is 4 container background</div>;
     }
     render() {
         return (
