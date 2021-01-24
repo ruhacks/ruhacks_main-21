@@ -14,7 +14,7 @@ export default class S02Rules extends Component {
      * Use position absolute to position the dives
      */
     renderContainerBackground() {
-        return <div>this is 2 background</div>;
+        return <div>this is 2 container background</div>;
     }
     render() {
         return (

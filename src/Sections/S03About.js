@@ -14,7 +14,7 @@ export default class S03About extends Component {
      * Use position absolute to position the dives
      */
     renderContainerBackground() {
-        return <div>this is 3 background</div>;
+        return <div>this is 3 container background</div>;
     }
     render() {
         return (
