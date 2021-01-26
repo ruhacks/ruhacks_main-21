@@ -1,11 +1,9 @@
-import React, { Component } from "react";
-import { AppBar, Button, Link, Toolbar, Typography } from '@material-ui/core'
+import React, { Component } from 'react';
+import { AppBar, Button, Link, Toolbar, Typography } from '@material-ui/core';
 
-import whiteLogo from '../images/RU_white.png'
+import whiteLogo from '../images/RU_white.png';
 
 export default class Header extends Component {
-
-    
     preventDefault = (event) => event.preventDefault();
     render() {
         /*return (
@@ -19,15 +17,15 @@ export default class Header extends Component {
             </div>
         );*/
 
-        return(
-            <AppBar position="static">
+        return (
+            <AppBar position="fixed">
                 <Toolbar>
-                    <img src={whiteLogo} className='navLogo' alt='RU Hacks Logo'/>
-                    <Typography className='navHeader' variant='h4'>
+                    <img src={whiteLogo} className="navLogo" alt="RU Hacks Logo" />
+                    <Typography className="navHeader" variant="h4">
                         RU Hacks
                     </Typography>
                 </Toolbar>
             </AppBar>
-        )
+        );
     }
 }
