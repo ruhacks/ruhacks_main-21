@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import Section from "../components/Section";
+import { Parallax } from 'react-scroll-parallax';
+import DSQ from '../images/DSQ_NO_LINE.svg'
+import RuLogoRGB from '../images/RU_RGB.svg'
+
+import { Button, Typography } from '@material-ui/core'
 
 export default class S01Intro extends Component {
     /**
@@ -7,14 +12,20 @@ export default class S01Intro extends Component {
      * Make the width and height of the returning div 100%
      */
     renderBackground() {
-        return <div>this is 1 background</div>;
+        return <div id='colorBannerBack' className='colorBannerBack'/>;
     }
     /**
      * Use this for setting up background images
      * Use position absolute to position the dives
      */
     renderContainerBackground() {
-        return <div>this is 1 container background</div>;
+        return (
+        <div className='bannerBack'>
+            <Parallax className="DSQ" y={[-5, 5]} tagOuter="figure">
+                <img src={DSQ} alt='Dundas Square'/>
+            </Parallax>
+        </div>
+        );
     }
     render() {
         return (
@@ -22,7 +33,26 @@ export default class S01Intro extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >
-                Intro
+                <div className='bannerTitle' id='bannerTitle'>
+                    <img src={RuLogoRGB} className='mainLogo' alt='RU Hacks Logo'/>
+                    <Typography id='mainTitle' variant="h1" component="h1">
+                        RU HACKS
+                    </Typography>
+                    <Typography id='subTitle' variant="h3" component="h3">
+                        Digitally Together!
+                    </Typography>
+                    <div className='bannerContent'>
+                        <Button
+                            type='button'
+                            variant='contained'
+                            color='secondary'
+                            className='upcoming'
+                            onClick={() => console.log('clicked')}
+                        >
+                            See our upcoming events!
+                        </Button>
+                    </div>
+                </div>
             </Section>
         );
     }

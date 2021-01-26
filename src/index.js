@@ -2,10 +2,52 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'css/main.scss';
 import App from './App';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            light: '#3159a8',
+            dark: '#17193d',
+            main: '#264288',
+        },
+        secondary: {
+            dark: '#fbe006',
+            light: '#fbeebb',
+            main: '#f6e17e',
+        },
+        neutral: {
+            dark: '#37527c',
+            light: '#7a90a1',
+            main: '#4ba3b7',
+        },
+        success: {
+            main: '#4caf50',
+            light: '#81c784',
+            dark: '#388e3c',
+        },
+    },
+    typography: {
+        h1: {
+            fontSize: '8rem'
+        },
+        h2 : {
+            fontSize: '6rem'
+        },
+        h3: {
+            fontSize: '4rem'
+        },
+    }
+});
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <MuiThemeProvider theme={theme}>
+            <ParallaxProvider>
+                <App />
+            </ParallaxProvider>
+        </MuiThemeProvider>
     </React.StrictMode>,
     document.getElementById('root'),
 );
