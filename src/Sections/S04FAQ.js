@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import Section from "../components/Section";
+import Heading from 'components/Heading';
+import React, { Component } from 'react';
+import Section from '../components/Section';
 
 export default class S04FAQ extends Component {
     /**
@@ -7,7 +8,7 @@ export default class S04FAQ extends Component {
      * Make the width and height of the returning div 100%
      */
     renderBackground() {
-        return <div>this is 4 background</div>;
+        return <div></div>;
     }
     /**
      * Use this for setting up background images
@@ -22,7 +23,7 @@ export default class S04FAQ extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >
-                FAQ
+                <Heading />
             </Section>
         );
     }
