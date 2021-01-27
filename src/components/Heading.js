@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 
 export default class Heading extends Component {
     render() {
-        const { headingText, old } = this.props
-        if(old){
+        const { headingText, old } = this.props  
+        if(old){ //For testing purposes
             return (
                 <div className='heading-textBox'>
                     <Typography variant="h4" component="h4">
-                        {headingText}
+                        {headingText} 
                     </Typography>
                 </div>
             )
