@@ -21,7 +21,7 @@ export default class Header extends Component {
         return (
             <HideOnScroll {...this.props}>
                 <AppBar elevation={0}>
-                    <Toolbar>
+                    <Toolbar className="heading-material">
                         <div className="header-con">
                             <div className="header-name">RUHACKS</div>
                             <div className="header-socials">SOCIALS</div>

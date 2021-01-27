@@ -1,10 +1,11 @@
-.colorFAQBack{
+.colorFAQBack {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #a05162, #227DF5);
+    // background: linear-gradient(to bottom, #a05162, #227df5);
+    background-color: $midblue;
 }
 
-.ROM{
+.ROM {
     position: absolute;
     height: 100%;
     width: 100%;
