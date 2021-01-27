@@ -22,11 +22,6 @@ const theme = createMuiTheme({
             light: '#7a90a1',
             main: '#4ba3b7',
         },
-        success: {
-            main: '#4caf50',
-            light: '#81c784',
-            dark: '#388e3c',
-        },
     },
     typography: {
         h1: {

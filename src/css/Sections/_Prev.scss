@@ -1,0 +1,30 @@
+.colorPrevBack{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #a7732b 20%, #4e46a1 40%,  #a05162 80% );
+}
+
+.SLC{
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    left: 100%;
+    transform: translate(-50%, 0);
+    padding-top: 5rem;
+    z-index: 500;
+}
+
+.SLC-BACK{
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    transform: translate(-20%, 0);
+    z-index: 300;
+}
+
+.statistics{
+    width: 70%;
+    z-index: 500;
+    position: absolute;
+    right: 50%
+}
