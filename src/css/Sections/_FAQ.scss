@@ -8,8 +8,17 @@
 .ROM {
     position: absolute;
     height: 100%;
-    width: 100%;
-    right: 40%;
+    width: 80%;
+    right: 60%;
     top: 40%;
     z-index: 500;
+}
+
+.faq-container-info{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
 }
