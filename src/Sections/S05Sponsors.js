@@ -68,7 +68,7 @@ export default class S05Sponsors extends Component {
                 background={this.renderBackground}
             >
                 <Heading headingText='Sponsors' />
-                <div className='sponsor-container'>
+{/*                 <div className='sponsor-container'>
                     <div className='sponsor-row'>
                         <Link className='sponsor' href="https://cloud.google.com/">
                             <img src={gcloud} alt='google-cloud'/>
@@ -179,7 +179,7 @@ export default class S05Sponsors extends Component {
                             <img src={RSS} alt='RSS'/>
                         </Link>
                     </div>
-                </div>
+                </div> */}
             </Section>
         );
     }

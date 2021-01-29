@@ -45,7 +45,7 @@ export default class S03Prev extends Component {
                 background={this.renderBackground}
             >
                 <Heading headingText='In Previous Years' />
-                <img className='statistics' src={Stats} alt='Previous year statistics'/>
+                {/* <img className='statistics' src={Stats} alt='Previous year statistics'/> */}
             </Section>
         );
     }

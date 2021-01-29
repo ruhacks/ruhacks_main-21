@@ -1,7 +1,7 @@
 .colorPrevBack {
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #24305c, rgb(24,25,61) 50%);
+    background: linear-gradient(180deg, #df731b 0%,rgb(155, 94, 90) 6%,#4e46a1 20%,  #a05162 80% );
     //background-color: #24305c;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .statistics {
-    width: 100%;
+    width: 70%;
     z-index: 100;
     position: absolute;
     right: 50%;

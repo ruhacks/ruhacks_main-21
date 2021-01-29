@@ -37,6 +37,10 @@ a {
     }
 }
 
+img{
+    overflow: hidden;
+}
+
 @mixin container() {
     position: relative;
     padding-right: 5px;

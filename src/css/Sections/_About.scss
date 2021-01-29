@@ -1,8 +1,9 @@
 .colorRulesBack {
     height: 100%;
     width: 100%;
-    // background: linear-gradient(180deg, rgba(51, 8, 103, 1) 25%, #fc8f0d 97.5%);
-    background-color: $white;
+    background: linear-gradient(180deg, rgba(49, 33, 87, 1) 25%, rgb(68, 43, 80) 30%, #fc8f0d 80.5%, #df731b );
+    //background-color: $white;
+    //#fc8f0d
 }
 
 .CN {
@@ -20,4 +21,8 @@
     width: 200%;
     transform: translate(-20%, -10%);
     z-index: -1;
+}
+
+.rules-container-info{
+    
 }
