@@ -1,4 +1,7 @@
 .heading {
+    &-material {
+        background-color: $secondaryblue;
+    }
     &-bg {
         position: absolute;
         top: 0;
@@ -47,7 +50,7 @@
         border-radius: 5px;
         padding: 20px 20px 20px 20px;
         box-shadow: 16px 13px #ffdc00;
-        width:50%;
+        width: 50%;
         margin: 0 auto;
     }
 }

@@ -1,14 +1,19 @@
-.colorBannerBack{
+.colorBannerBack {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom,  rgba(3, 25, 97, 0.822) 11.2%, rgba(51,8,103,1) 92.5% );
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba(3, 25, 97, 0.822) 11.2%,
+    //     rgba(51, 8, 103, 1) 92.5%
+    // );
+    background-color: $secondaryblue;
 }
 
-.bannerBack{
+.bannerBack {
     overflow: hidden;
 }
 
-.DSQ{
+.DSQ {
     position: absolute;
     height: 100%;
     width: 170%;
@@ -18,26 +23,26 @@
     z-index: 500;
 }
 
-.bannerTitle{
+.bannerTitle {
     position: relative;
     text-align: center;
-    color:white;
+    color: white;
     padding-top: 6em;
 }
 
-.bannerContent{
+.bannerContent {
     padding-top: 1.5em;
 }
 
-.mainLogo{
+.mainLogo {
     width: 200px;
     height: 200px;
 }
 
-button.upcoming{
+button.upcoming {
     border-color: rgb(255, 0, 119);
 }
 
-div.banner{
+div.banner {
     z-index: 500;
 }
