@@ -2,14 +2,14 @@ let socials = [
     {
         id: 'twitter',
         link: 'https://twitter.com/ryersonuhacks',
-        logo: <i class="fab fa-twitter" />,
+        logo: <i className="fab fa-twitter" />,
     },
     {
         id: 'instagram',
         link: 'https://www.instagram.com/ruhacks/?hl=en',
         logo: (
             <span style={{ fontSize: '1.05em' }}>
-                <i class="fab fa-instagram" />
+                <i className="fab fa-instagram" />
             </span>
         ),
     },
@@ -18,7 +18,7 @@ let socials = [
         link: 'facebook.com/ryersonuhacks',
         logo: (
             <span style={{ fontSize: '0.9em' }}>
-                <i class="fab fa-facebook-f" />{' '}
+                <i className="fab fa-facebook-f" />{' '}
             </span>
         ),
     },
