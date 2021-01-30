@@ -18,24 +18,27 @@ export default class Footer extends Component {
         return (
             <Section className="footer-con" background={this.renderBackground}>
                 <div className="footer-container">
-                    <div className="footer-socials__con">
-                        {socials.map(({ id, link, logo }) => {
-                            return (
-                                <a key={id} href={link} className="footer-socials__item">
-                                    {logo}
-                                </a>
-                            );
-                        })}
-                    </div>
-                    <div className="footer-row__con">
-                        <div className="footer-row__item">© RU Hacks 2021</div>
-                        <div className="footer-row__item">communications@ruhacks.com</div>
-                        <a
-                            href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-                            className="footer-row__item"
-                        >
-                            MLH Code of Conduct
-                        </a>
+                    <div className='footer-content'>
+                        <div className="footer-socials__con">
+                            {socials.map(({ id, link, logo }) => {
+                                return (
+                                    <a key={id} href={link} className="footer-socials__item">
+                                        {logo}
+                                    </a>
+                                );
+                            })}
+                        </div>
+                        <div className="footer-row__con">
+                            
+                            <div className="footer-row__item">© RU Hacks 2021</div>
+                            <div className="footer-row__item">communications@ruhacks.com</div>
+                            <a
+                                href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                                className="footer-row__item"
+                            >
+                                MLH Code of Conduct
+                            </a>
+                        </div>
                     </div>
                 </div>
             </Section>
