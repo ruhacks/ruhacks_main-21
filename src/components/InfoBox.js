@@ -25,12 +25,15 @@ export default class InfoBox extends Component {
         return(
             <div className = "section-info">
                 <Typography variant="h4">{infoTitle}</Typography>
+                <hr />
                 {open &&(
                     <div>
-                        <Typography variant="body1" className="answer">{infoText}</Typography>
+                        <Typography variant="h6" className="answer">{infoText}</Typography>
+                        <hr />
                         <ArrowUpwardIcon onClick={this.handleOpenInfo} className='arrow-close-info'/>
                     </div>
                 )}
+                
                 {!open &&(
                     <ArrowDownwardIcon onClick={this.handleOpenInfo} className='arrow-open-info'/>
                 )}

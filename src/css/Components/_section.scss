@@ -22,11 +22,14 @@
         height: 100%;
         width: 100%;
         z-index: 1000;
-
+        padding-top: 1em;
         @include container();
     }
     &-title {
         color: white;
+    }
+    &-info{
+        height: fit-content;
     }
 }
 .cbk {
