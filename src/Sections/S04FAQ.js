@@ -9,6 +9,7 @@ import { Parallax } from 'react-scroll-parallax';
 import { infoBoxTitles, infoBoxDescription } from 'config/Text'
 
 import ROM from 'images/backgrounds/ROM/ROM.svg'
+import ROM_BACK from 'images/backgrounds/ROM/ROM_BACK.svg'
 
 export default class S04FAQ extends Component {
     /**
@@ -30,6 +31,9 @@ export default class S04FAQ extends Component {
                         <img src={ROM} alt='Ryerson Student Learning center'/>
                     </Fade>
                 </Parallax>
+                <Parallax className="ROM-BACK" y={[-15, 10]} tagOuter='figure'>
+                    <img src={ROM_BACK} alt='SLC BACKGROUND' />
+                </Parallax>
             </div>
         );
     }
@@ -41,15 +45,15 @@ export default class S04FAQ extends Component {
             >
                 <Heading headingText='Frequently Asked Questions' old={true}/>
                 <div className='faq-container-info'>
-                    <InfoBox infoTitle = {infoBoxTitles.FAQ.whoCanAttend} infoText = {infoBoxDescription.FAQAnswers.whoCanAttend} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.howWillIGet} infoText = {infoBoxDescription.FAQAnswers.howWillIGet} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.cost} infoText = {infoBoxDescription.FAQAnswers.cost} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.firstTime} infoText = {infoBoxDescription.FAQAnswers.firstTime} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.workBeforeEvent} infoText = {infoBoxDescription.FAQAnswers.workBeforeEvent} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.hardware} infoText = {infoBoxDescription.FAQAnswers.hardware} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.maxTeam} infoText = {infoBoxDescription.FAQAnswers.maxTeam} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.judging} infoText = {infoBoxDescription.FAQAnswers.judging} />
-                    <InfoBox infoTitle={infoBoxTitles.FAQ.more} infoText = {infoBoxDescription.FAQAnswers.more} />
+                    <InfoBox infoTitle = {infoBoxTitles.FAQ.whoCanAttend} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.whoCanAttend} textVariant = "h6" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.howWillIGet} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.howWillIGet} textVariant = "h6" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.cost} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.cost} textVariant = "h6" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.firstTime} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.firstTime} textVariant = "body1" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.workBeforeEvent} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.workBeforeEvent} textVariant = "body1" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.hardware} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.hardware} textVariant = "h6" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.maxTeam} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.maxTeam} textVariant = "h6" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.judging} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.judging} textVariant = "h6" permanentOpen = {true}/>
+                    <InfoBox infoTitle={infoBoxTitles.FAQ.more} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.more} textVariant = "h6" permanentOpen = {true}/>
                 </div>
             </Section>
         );

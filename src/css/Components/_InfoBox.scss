@@ -3,15 +3,13 @@
 }
 
 .section-info {
-    margin: 30px;
     text-align: center;
     color: white;
-    background-color: rgb(38, 66, 136);
+    background-color: $primaryblue;
     border-radius: 5px;
     padding: 20px 20px 20px 20px;
     width: 25%;
     position: relative;
-    margin: 0 auto;
 }
 
 hr{

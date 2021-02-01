@@ -26,10 +26,10 @@ export const infoBoxDescription = {
         howWillIGet: 'This year RU Hacks will be doing a virtual hacakthon due to recent COVID-19 events. We will let you know soon on how to register!',
         cost: 'Admission to RU Hacks is completely free!',
         firstTime: 'No worries. Prior coding or technical experience is not a requirement at all. RU Hacks is a fun learning experience. We’ll be having tons of beginner workshops, talks and as well as mentors to help you with your projects. Our goal is for you to leave RU Hacks having learned something.',
-        workBeforeEvent: "No. We do not allow participants to work on pre-existing projects. All projects must be worked on from scratch. You'll have enough time to make something you can be proud of. However, you are welcome to familiarize yourself with specific tools and technologies beforehand!",
+        workBeforeEvent: "No. We do not allow participants to work on pre-existing projects. You'll have enough time to make something you can be proud of. However, you are welcome to familiarize yourself with specific tools and technologies beforehand!",
         hardware: 'If you have any specific hardware you intend to work with, feel free to use them.',
         maxTeam: 'A team can be a person working on their own, however, the largest team allowed will be a team of 4.',
         judging: 'Our panel of judges consists of some of the biggest names in tech. These experts will eagerly be viewing your projects based on usefulness, design, difficulty and creativity. The top projects will get a chance to demo their hacks in front of all of RU Hacks during the closing ceremony.',
-        more: 'Reach out to us at <a href = "mailto:communications@ruhacks.com" target = "_blank" rel="noopener">communications@ruhacks.com</a>'
+        more: 'Reach out to us at communications@ruhacks.com'
     }
 }

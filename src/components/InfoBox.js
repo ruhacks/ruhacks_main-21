@@ -9,7 +9,7 @@ export default class InfoBox extends Component {
     constructor(props){
         super(props)
         this.state = {
-            open: false
+            open: props.permanentOpen
         }
     }
 
@@ -21,16 +21,19 @@ export default class InfoBox extends Component {
 
     render(){
         const { open } = this.state
-        const { infoTitle, infoText } = this.props
+        const { infoTitle, infoText, permanentOpen, titleVariant, textVariant } = this.props
         return(
             <div className = "section-info">
-                <Typography variant="h4">{infoTitle}</Typography>
+                <Typography variant={titleVariant}>{infoTitle}</Typography>
                 <hr />
                 {open &&(
                     <div>
-                        <Typography variant="h6" className="answer">{infoText}</Typography>
+                        <Typography variant={textVariant} className="answer">{infoText}</Typography>
                         <hr />
-                        <ArrowUpwardIcon onClick={this.handleOpenInfo} className='arrow-close-info'/>
+                        {!permanentOpen && (
+                            <ArrowUpwardIcon onClick={this.handleOpenInfo} className='arrow-close-info'/>
+                        )
+}
                     </div>
                 )}
                 
