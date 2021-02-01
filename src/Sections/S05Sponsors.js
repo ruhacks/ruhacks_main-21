@@ -30,7 +30,7 @@ import DMZ from 'images/sponsors/DMZ.png'
 import RESS from 'images/sponsors/ress.png'
 import ECE from 'images/sponsors/ryerson_ece_logo.png'
 import beamCity from 'images/past_sponsors/Beamcity_logo.png'
-import FEAS from 'images/past_sponsors/feas.jpg'
+import FEAS from 'images/sponsors/FEAS.png'
 import FOS from 'images/sponsors/ryerson-faculty-of-science-logo.png'
 import StickerMule from 'images/sponsors/stickermule.svg'
 import RSU from 'images/past_sponsors/rsu.png'
@@ -66,9 +66,10 @@ export default class S05Sponsors extends Component {
             <Section
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
+                className='sponsor-section'
             >
                 <Heading headingText='Sponsors' />
-{/*                 <div className='sponsor-container'>
+                 <div className='sponsor-container'>
                     <div className='sponsor-row'>
                         <Link className='sponsor' href="https://cloud.google.com/">
                             <img src={gcloud} alt='google-cloud'/>
@@ -93,20 +94,9 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://magnet.today/">
                             <img src={Magnet} alt='Magnet'/>
                         </Link>
-                        <Link className='sponsor' href="https://chainsafe.io/">
-                            <img src={chainsafe} alt='chainsafe'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.witm.ca/">
-                            <img src={WITM} alt='WITM'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.hackerearth.com/">
-                            <img src={hackerearth} alt='hackerearth'/>
-                        </Link>
                     </div>
                     <div className='sponsor-row'>
-                        <Link className='sponsor' href="https://www.resolver.com/">
-                            <img src={Resolver} alt='resolver'/>
-                        </Link>
+                        
                         <Link className='sponsor' href="https://www.resolver.com/">
                             <img src={TechDomains} alt='TechDomains'/>
                         </Link>
@@ -133,9 +123,7 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://dmz.ryerson.ca/">
                             <img src={DMZ} alt='DMZ'/>
                         </Link>
-                        <Link className='sponsor' href="https://www.ress.ca/">
-                            <img src={RESS} alt='RESS'/>
-                        </Link>
+                        
                     </div>
                     <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.ee.ryerson.ca/">
@@ -146,6 +134,9 @@ export default class S05Sponsors extends Component {
                         </Link>
                         <Link className='sponsor' href="https://www.ryerson.ca/engineering-architectural-science/">
                             <img src={FEAS} alt='FEAS'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.hackerearth.com/">
+                            <img src={hackerearth} alt='hackerearth'/>
                         </Link>
                     </div>
                     <div className='sponsor-row'>
@@ -161,9 +152,7 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://www.wolfram.com/">
                             <img src={Wolfram} alt='Wolfram'/>
                         </Link>
-                        <Link className='sponsor' href="https://www.fdmgroup.com/en-ca/ca-home/">
-                            <img src={FDM} alt='FDM'/>
-                        </Link>
+                        
                     </div>
                     <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.brainpower.ca/">
@@ -179,7 +168,21 @@ export default class S05Sponsors extends Component {
                             <img src={RSS} alt='RSS'/>
                         </Link>
                     </div>
-                </div> */}
+                    <div className='sponsor-row'>
+                        <Link className='sponsor' href="https://www.ress.ca/">
+                            <img src={RESS} alt='RESS'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.resolver.com/">
+                            <img src={Resolver} alt='resolver'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.fdmgroup.com/en-ca/ca-home/">
+                            <img src={FDM} alt='FDM'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.witm.ca/">
+                            <img src={WITM} alt='WITM'/>
+                        </Link>
+                    </div>
+                </div>
             </Section>
         );
     }

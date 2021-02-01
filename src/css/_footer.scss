@@ -2,10 +2,13 @@ $footer-color: #c0c0c0;
 .footer {
     &-con {
         background-color: #f0f0f0;
-        height: 225px !important;
         padding-bottom: 25px;
         box-sizing: border-box;
         min-height: unset !important;
+    }
+    &-content{
+        position: absolute;
+        bottom:0;
     }
     &-container {
         color: #c6c6c6;
@@ -24,6 +27,7 @@ $footer-color: #c0c0c0;
         &__con {
             display: flex;
             margin-bottom: 0.9em;
+            margin-left: 35%;
         }
         &__item {
             font-size: 2.5em;
@@ -41,6 +45,7 @@ $footer-color: #c0c0c0;
                 transition: transform 0.5;
             }
         }
+        
     }
     &-row {
         &__con {

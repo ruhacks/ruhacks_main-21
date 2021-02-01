@@ -44,8 +44,12 @@ export default class S03Prev extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >
+<<<<<<< HEAD
                 <Heading headingText='In Previous Years' />
                 {/* <img className='statistics' src={Stats} alt='Previous year statistics'/> */}
+=======
+                <Heading headingText='Our team' />
+>>>>>>> origin/master
             </Section>
         );
     }
