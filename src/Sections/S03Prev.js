@@ -45,7 +45,7 @@ export default class S03Prev extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >
-                <Heading headingText='Our team' />
+                <Heading headingText='Our team' old={true}/>
                 <div className='team-div'>
                     <Team />
                 </div>

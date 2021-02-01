@@ -60,7 +60,7 @@ function Item(props)
     const { group, members } = props.item; 
     return (
         <div className='team'>
-            <Typography className='team-group' variant='h3'>{group}</Typography>
+            <Typography className='team-group' variant='h4'>{group}</Typography>
             <div className='team-members'>
                 {
                     members.map((member) => {

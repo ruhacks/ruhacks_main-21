@@ -1,5 +1,6 @@
 .team{
-    background-color: white;
+    background-color: #8870c18a;
+    color:white;
     display: flex;
     flex-wrap: wrap;
     border-radius: 6px;
@@ -25,4 +26,8 @@
         text-align: center;
         width: 100%;
     }
+}
+
+.Carousel-root-1 {
+    width: 100%
 }

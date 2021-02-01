@@ -39,7 +39,7 @@ export default class S04FAQ extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >
-                <Heading headingText='Frequently Asked Questions' />
+                <Heading headingText='Frequently Asked Questions' old={true}/>
                 <div className='faq-container-info'>
                     <InfoBox infoTitle = {infoBoxTitles.FAQ.whoCanAttend} infoText = {infoBoxDescription.FAQAnswers.whoCanAttend} />
                     <InfoBox infoTitle={infoBoxTitles.FAQ.howWillIGet} infoText = {infoBoxDescription.FAQAnswers.howWillIGet} />
