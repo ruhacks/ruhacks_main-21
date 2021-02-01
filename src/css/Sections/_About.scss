@@ -9,8 +9,8 @@
 .CN {
     position: absolute;
     height: 100%;
-    width: 140%;
-    right: 5%;
+    width: 120%;
+    right: 18%;
     padding-bottom: 15%;
     z-index: 500;
 }
@@ -24,5 +24,13 @@
 }
 
 .rules-container-info{
+<<<<<<< HEAD
     
+=======
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    justify-content: center;
+    width: 100%
+>>>>>>> origin/master
 }

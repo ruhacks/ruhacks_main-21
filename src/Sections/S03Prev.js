@@ -5,6 +5,7 @@ import Section from '../components/Section';
 import Fade from 'react-reveal/Fade';
 import { Parallax } from 'react-scroll-parallax';
 
+import Team from 'components/Team'
 
 //import SLC from 'images/SLC.svg'
 
@@ -45,6 +46,9 @@ export default class S03Prev extends Component {
                 background={this.renderBackground}
             >
                 <Heading headingText='Our team' />
+                <div className='team-div'>
+                    <Team />
+                </div>
             </Section>
         );
     }

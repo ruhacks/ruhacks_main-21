@@ -23,8 +23,19 @@ export default class Header extends Component {
                 <AppBar elevation={0}>
                     <Toolbar className="heading-material">
                         <div className="header-con">
-                            <div className="header-name">RUHACKS</div>
-                            <div className="header-socials">SOCIALS</div>
+                            <Link href='#' variant='body1'>
+                                <img src={whiteLogo} className='navLogo' alt='RU Hacks'/>
+                            </Link>
+                            <Link href='#' variant='body1'>
+                                <div className="header-name">
+                                    <Typography variant='body1'>RU HACKS</Typography>
+                                </div> 
+                            </Link>
+                            <Link href="https://ruhacks.com/assets/rules.pdf" variant='button' className='header-button'>
+                                <Button variant='outlined'>
+                                    <Typography variant='body1'>Hackathon Rules</Typography>
+                                </Button>
+                            </Link>
                             <img
                                 src={MLH}
                                 className="header-mlh"

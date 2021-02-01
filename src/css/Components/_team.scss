@@ -1,0 +1,28 @@
+.team{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    &-members{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    &-person{
+        margin: 2em;
+        &-photo{
+            width: 250px !important; 
+            height: 250px !important;
+            border-radius: 6px;
+        }
+        &-name, &-descript{
+            text-align: center;
+        }
+
+    }
+    &-group{
+        text-align: center;
+        width: 100%;
+    }
+}
