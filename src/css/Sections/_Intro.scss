@@ -23,6 +23,23 @@
     z-index: 500;
 }
 
+@media screen and (max-width: 1460px){
+    .DSQ{
+        transform: translate(-50%, 20%);
+    }
+}
+@media screen and (max-width: 420px){
+    .DSQ{
+        transform: translate(-50%, 28%);
+    }
+}
+
+@media screen and (max-width: 332px){
+    .DSQ{
+        transform: translate(-50%, 40%);
+    }
+}
+
 .bannerTitle {
     position: relative;
     text-align: center;

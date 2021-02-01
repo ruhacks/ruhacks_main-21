@@ -29,6 +29,12 @@
             max-width: 300px;
             max-height: 200px;
         }
+        @media screen and (max-width: 1300px){
+            img{
+                max-width: 150px;
+                max-height: 100px;
+            }
+        }
     }
     &-container{
         display: flex;

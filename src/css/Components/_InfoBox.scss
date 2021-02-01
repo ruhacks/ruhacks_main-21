@@ -12,6 +12,14 @@
     position: relative;
 }
 
+@media screen and (max-width: 650px){
+    .section-info{
+        width: 100%;
+        margin-bottom: 1em;
+        margin-top: 1em
+    }
+}
+
 hr{
     border: 0;
     border-bottom: solid 2px white;

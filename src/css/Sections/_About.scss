@@ -40,3 +40,16 @@
         margin-right: 20rem;
     }
 }
+
+@media screen and (max-width: 650px){
+    .rules-container-info{
+        justify-content:center;
+        margin-top: 3em;
+        div.section-info{
+            width: 100%
+        }
+        div.section-info:nth-child(1){
+            margin: 0 auto;
+        }
+    }
+}
