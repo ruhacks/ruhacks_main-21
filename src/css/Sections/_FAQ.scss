@@ -1,0 +1,24 @@
+.colorFAQBack {
+    height: 100%;
+    width: 100%;
+    // background: linear-gradient(to bottom, #a05162, #227df5);
+    background-color: $midblue;
+}
+
+.ROM {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    right: 60%;
+    top: 40%;
+    z-index: 500;
+}
+
+.faq-container-info{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}

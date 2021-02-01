@@ -1,0 +1,46 @@
+.colorSponsorsBack {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, $midblue, rgb(240, 240, 240));
+}
+
+.AGO {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    transform: translate(45%, 35%);
+    // padding-top: 5rem;
+    z-index: 500;
+}
+
+.sponsor{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 1em;
+
+    &-row{
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        padding: 2em;
+        img{
+            max-width: 300px;
+            max-height: 200px;
+        }
+    }
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 3em;
+    }
+    &-section{
+        height: 180vh;
+    }
+}

@@ -1,0 +1,43 @@
+.section {
+    min-height: 100vh;
+    // 2px scroll bar.
+    width: calc(100vw - 2px);
+    height: 90vh;
+    max-width: 100vw;
+    position: relative;
+    // z-index: 1000;
+    &-background {
+        & > div {
+            flex: 1;
+        }
+        display: flex;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    &-content {
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+
+        @include container();
+    }
+    &-title {
+        color: white;
+    }
+}
+.cbk {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    text-align: end;
+}
+
+.bannerContent button {
+    border: 3px solid yellow;
+}

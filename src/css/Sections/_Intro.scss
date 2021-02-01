@@ -1,0 +1,48 @@
+.colorBannerBack {
+    height: 100%;
+    width: 100%;
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba(3, 25, 97, 0.822) 11.2%,
+    //     rgba(51, 8, 103, 1) 92.5%
+    // );
+    background-color: $secondaryblue;
+}
+
+.bannerBack {
+    overflow: hidden;
+}
+
+.DSQ {
+    position: absolute;
+    height: 100%;
+    width: 170%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 5rem;
+    z-index: 500;
+}
+
+.bannerTitle {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 6em;
+}
+
+.bannerContent {
+    padding-top: 1.5em;
+}
+
+.mainLogo {
+    width: 200px;
+    height: 200px;
+}
+
+button.upcoming {
+    border-color: rgb(255, 0, 119);
+}
+
+div.banner {
+    z-index: 500;
+}

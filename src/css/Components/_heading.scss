@@ -1,0 +1,57 @@
+.heading {
+    &-material {
+        background-color: $secondaryblue;
+    }
+    &-bg {
+        position: absolute;
+        top: 0;
+
+        left: 0;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        // background-color: blue;
+        // border-bottom: 5px solid yellow;
+        // border-right: 5px solid yellow;
+    }
+    &-box {
+        position: absolute;
+
+        border-bottom: 5px solid yellow;
+        border-right: 5px solid yellow;
+        bottom: -5px;
+        right: -5px;
+        z-index: 900;
+        height: 18px;
+        width: 50%;
+        border-radius: 5px;
+    }
+    &-boxL {
+        left: -5px;
+        border-right: none;
+        border: none;
+        // border-left: 5px solid yellow;
+    }
+    width: fit-content;
+    display: flex;
+    padding: 2px 5px;
+    height: fit-content;
+    position: relative;
+    margin: 0 auto;
+    &-text {
+        z-index: 600;
+        position: relative;
+        color: black;
+        text-shadow: 0.07em 0 #0001, 0 0.07em #0001, -0.07em 0 #0001, 0 -0.07em #0001;
+    }
+    &-textBox {
+        text-align: center;
+        color: white;
+        background-color: #004c94;
+        border-radius: 5px;
+        padding: 20px 20px 20px 20px;
+        box-shadow: 16px 13px #ffdc00;
+        width: 50%;
+        margin: 0 auto;
+    }
+}

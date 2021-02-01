@@ -1,0 +1,23 @@
+.colorRulesBack {
+    height: 100%;
+    width: 100%;
+    // background: linear-gradient(180deg, rgba(51, 8, 103, 1) 25%, #fc8f0d 97.5%);
+    background-color: $white;
+}
+
+.CN {
+    position: absolute;
+    height: 100%;
+    width: 140%;
+    right: 5%;
+    padding-bottom: 15%;
+    z-index: 500;
+}
+
+.CN-BACK {
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    transform: translate(-20%, -10%);
+    z-index: -1;
+}

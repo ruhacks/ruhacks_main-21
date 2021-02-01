@@ -1,9 +1,16 @@
 // This page should only have imports
 @import 'variables';
-@import 'section';
+@import 'Components/section';
+@import 'Components/heading';
+@import 'Components/InfoBox';
 
-@import "Sections/About";
-@import "Sections/FAQ";
-@import "Sections/Intro";
-@import "Sections/Rules";
-@import "Sections/Sponsors";
+
+@import 'Sections/FAQ';
+@import 'Sections/Intro';
+@import 'Sections/Prev';
+@import 'Sections/About';
+@import 'Sections/Rules';
+@import 'Sections/Sponsors';
+
+@import 'header';
+@import 'footer';
