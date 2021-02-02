@@ -26,12 +26,12 @@ export default class S02About extends Component {
     renderContainerBackground() {
         return (
                 <div className='bannerBack'>
-                    <Parallax className="CN" y={[-15, 5]} tagOuter="figure">
+                    <Parallax className="CN" y={[-10, -5]} tagOuter="figure">
                         <Fade>
                             <img src={CN} alt='CN Tower'/>
                         </Fade>
                     </Parallax>
-                    <Parallax className="CN-BACK" y={[-15, 5]} tagOuter="figure">
+                    <Parallax className="CN-BACK" y={[0, 5 ]} tagOuter="figure">
                         <Fade>
                             <img src={CN_BACK} alt='CN Tower'/>
                         </Fade>
@@ -48,12 +48,14 @@ export default class S02About extends Component {
                 <Fade top>
                     <Heading headingText='About RU Hacks' old={true}/>
                 </Fade>
-                <Fade right>
                 <div className='rules-container-info'>
-                        <InfoBox infoTitle = {infoBoxTitles.About.whatIs} titleVariant = "h4"  infoText = {infoBoxDescription.AboutAnswers.whatIs} textVariant = "h6" permanentOpen = {true}/>
-                        <InfoBox infoTitle = {infoBoxTitles.About.whyGo} titleVariant = "h4" infoText = {infoBoxDescription.AboutAnswers.whyGo} textVariant = "h6"  permanentOpen = {true}/>
+                        <Fade left>
+                            <div>
+                                <InfoBox infoTitle = {infoBoxTitles.About.whatIs} titleVariant = "h4"  infoText = {infoBoxDescription.AboutAnswers.whatIs} textVariant = "h6" permanentOpen = {true}/>
+                                <InfoBox infoTitle = {infoBoxTitles.About.whyGo} titleVariant = "h4" infoText = {infoBoxDescription.AboutAnswers.whyGo} textVariant = "h6"  permanentOpen = {true}/>
+                            </div>
+                        </Fade>
                 </div>
-                </Fade>
             </Section>
         );
     }

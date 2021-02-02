@@ -26,6 +26,9 @@ body {
     &::-webkit-scrollbar-thumb {
         background-color: #000000;
     }
+    figure{
+        user-select: none;
+    }
 }
 a {
     &,
@@ -37,8 +40,11 @@ a {
     }
 }
 
-img{
+img, figure{
     overflow: hidden;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 @mixin container() {
