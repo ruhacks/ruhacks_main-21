@@ -45,16 +45,10 @@ export default class S02About extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >  
-                <Fade top>
-                    <Heading headingText='About RU Hacks' old={true}/>
-                </Fade>
+                <Heading headingText='About RU Hacks' old={true}/>
                 <div className='rules-container-info'>
-                        <Fade left>
-                            <div>
-                                <InfoBox infoTitle = {infoBoxTitles.About.whatIs} titleVariant = "h4"  infoText = {infoBoxDescription.AboutAnswers.whatIs} textVariant = "h6" permanentOpen = {true}/>
-                                <InfoBox infoTitle = {infoBoxTitles.About.whyGo} titleVariant = "h4" infoText = {infoBoxDescription.AboutAnswers.whyGo} textVariant = "h6"  permanentOpen = {true}/>
-                            </div>
-                        </Fade>
+                    <InfoBox infoTitle = {infoBoxTitles.About.whatIs} titleVariant = "h4"  infoText = {infoBoxDescription.AboutAnswers.whatIs} textVariant = "h6" permanentOpen = {true}/>
+                    <InfoBox infoTitle = {infoBoxTitles.About.whyGo} titleVariant = "h4" infoText = {infoBoxDescription.AboutAnswers.whyGo} textVariant = "h6"  permanentOpen = {true}/>
                 </div>
             </Section>
         );
