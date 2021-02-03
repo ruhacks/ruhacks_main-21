@@ -44,6 +44,7 @@ export default class S03Prev extends Component {
             <Section
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
+                className='team-section'
             >
                 <Heading headingText='Our team' old={true}/>
                 <div className='team-div'>
