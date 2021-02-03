@@ -5,6 +5,8 @@ import DSQ from 'images/backgrounds/DSQ/DSQ_NO_LINET.svg'
 
 import RuLogoRGB from '../images/RU_RGB.svg'
 import EggwardSitting from 'images/eggward/sit2.png';
+import cloud from 'images/cloud3.png'
+import cloud2 from 'images/cloud2.png'
 
 
 import { Button, Typography } from '@material-ui/core'
@@ -27,6 +29,8 @@ export default class S01Intro extends Component {
         return (
         <div className='bannerBack'>
             <img className="DSQ" src={DSQ} alt='Dundas Square'/>
+            <img className='cloud moving-left' src={cloud} alt='cloud' />
+            <img className='cloud-small' src={cloud2} alt='cloud' />
         </div>
         );
     }

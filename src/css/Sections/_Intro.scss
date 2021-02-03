@@ -13,6 +13,25 @@
     overflow: hidden;
 }
 
+.cloud{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+
+    &-small{
+        position: absolute;
+        width: 10%;
+        top: 33%;
+        right: 77%;
+    }
+}
+
+
 .DSQ {
     position: absolute;
     height: 100%;
