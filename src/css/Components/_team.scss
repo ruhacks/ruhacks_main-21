@@ -6,6 +6,7 @@
     border-radius: 6px;
     &-div {
         display: flex;
+        margin-top: 5%;
         width: 100%;
     }
     &-members {
@@ -59,17 +60,65 @@
     &-row {
         display: flex;
         flex-direction: row;
+        margin-top: 15px;
     }
     &-group {
+        font-family: 'Open Sans';
+        color: $yellow;
+        font-weight: 700;
+        width: 175px;
+        display: flex;
+        align-items: center;
+        position: relative;
     }
     &-person {
+        transition: transform 0.2s, background-color 0.1s, margin 0.05s;
+        &:hover {
+            cursor: grabbing;
+            z-index: 1000 !important;
+            background-color: rgba($primaryblue, 1);
+            transform: scale(2);
+            border: 3px solid $yellow;
+            // margin-left: 30px;
+        }
+        border-radius: 5px;
+        width: 250px;
+        background-color: rgba($primaryblue, 0.9);
+        height: 60px;
+        overflow-y: visible;
+        position: relative;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-right: 10px;
+        &__small {
+            // margin-right: -30px;
+            transform: scale(0.7);
+            background-color: rgba($primaryblue, 0.6);
+            z-index: 500;
+            // & > .tm-person__image {
+            //     width: 100px;
+            //     height: 100px;
+            // }
+        }
         &__image {
             width: 50px;
+            margin-right: 10px;
+            z-index: inherit;
             height: 50px;
+            min-height: 50px;
             background-size: cover;
             border-radius: 50px;
         }
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
         &__name {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 600;
         }
         &__description {
         }
