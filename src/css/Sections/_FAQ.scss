@@ -1,8 +1,8 @@
 .colorFAQBack {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #a05162, #227df5);
-    //background-color: $midblue;
+    //background: linear-gradient(to bottom, #a05162, #227df5);
+    background-color: #2c3e80;
 }
 
 .ROM {
@@ -30,7 +30,7 @@
     align-items: center;
     margin-top: 2rem;
     div.section-info{
-        margin: 0.4rem;
+
         align-self: stretch;
     }
 }

@@ -24,26 +24,28 @@
         height: 100%;
         width: 100%;
         z-index: 1000;
+
         @include container();
     }
     &-title {
         color: white;
     }
-    &-info{
-        height: fit-content;
-    }
-}
-
-@media screen and (max-width: 760px){
-    .section{
-        min-height: none;
+    &-info {
+        margin: 30px;
+        width: 25%;
+        text-align: center;
+        color: white;
+        background-color: rgb(38, 66, 136);
+        border-radius: 5px;
+        padding: 20px 20px 20px 20px;
+        width: 50%;
+        position: relative;
     }
     .team-section{
         min-height: 60vh;
     }
     
 }
-
 .cbk {
     position: absolute;
     z-index: 100;

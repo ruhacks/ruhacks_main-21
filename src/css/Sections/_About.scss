@@ -1,27 +1,27 @@
 .colorRulesBack {
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(49, 33, 87, 1) 25%, rgb(68, 43, 80) 30%, #fc8f0d 80.5%, #df731bba );
-    //background-color: $white;
+    //background: linear-gradient(180deg, rgba(49, 33, 87, 1) 25%, rgb(68, 43, 80) 30%, #fc8f0d 80.5%, #df731bba );
+    background-color: $white;
     //#fc8f0d
 }
 
 .CN {
     position: absolute;
     height: 100%;
-    width: 163%;
+    width: 130%;
     right: 18%;
     padding-bottom: 15%;
-    transform: translate(27.7%, -8%);
+    transform: translate(8.7%, 11%);
 
-    z-index: 500;
+    z-index: 2000;
 }
 
 .CN-BACK {
     position: absolute;
     height: 100%;
     width: 180%;
-    transform: translate(-22%, 9%);
+    transform: translate(-18%, 9%);
     z-index: -1;
 }
 
@@ -29,7 +29,6 @@
     display: flex;
     width: 100%;
     height: 90%;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: 5rem;
@@ -39,11 +38,7 @@
         margin: 2rem;
         align-self: stretch;
     }
-    .react-reveal{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .react-revel:nth-child(1){
+    .rules-container-info:nth-child(1){
         justify-content: flex-start;
     }
     

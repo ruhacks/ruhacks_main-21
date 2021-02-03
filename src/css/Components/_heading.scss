@@ -1,6 +1,6 @@
 .heading {
     &-material {
-        background-color: $primaryblue;
+        background-color: $secondaryblue;
     }
     &-bg {
         position: absolute;
@@ -16,14 +16,15 @@
     }
     &-box {
         position: absolute;
-
-        border-bottom: 5px solid yellow;
-        border-right: 5px solid yellow;
+        text-align: center;
+        border-left: 5px solid #ffdc00;
+        border-bottom: 5px solid #ffdc00;
+        border-right: 5px solid #ffdc00;
         bottom: -5px;
         right: -5px;
         z-index: 900;
-        height: 18px;
-        width: 50%;
+        height: 100%;
+        width: 100%;
         border-radius: 5px;
     }
     &-boxL {
@@ -40,9 +41,13 @@
     margin: 0 auto;
     &-text {
         z-index: 600;
+        font-family: 'Poppins';
+        font-size: 60px;
         position: relative;
-        color: black;
-        text-shadow: 0.07em 0 #0001, 0 0.07em #0001, -0.07em 0 #0001, 0 -0.07em #0001;
+        color: $teal;
+    }
+    &-text.yellowText{
+        color: $yellow;
     }
     &-textBox {
         text-align: center;

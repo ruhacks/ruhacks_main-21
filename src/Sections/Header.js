@@ -31,11 +31,6 @@ export default class Header extends Component {
                                     <Typography variant='body1'>RU HACKS</Typography>
                                 </div> 
                             </Link>
-                            <Link href="https://ruhacks.com/assets/rules.pdf" variant='button' className='header-button'>
-                                <Button variant='outlined'>
-                                    <Typography variant='body1'>Hackathon Rules</Typography>
-                                </Button>
-                            </Link>
                             <img
                                 src={MLH}
                                 className="header-mlh"
