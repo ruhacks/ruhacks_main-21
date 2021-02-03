@@ -1,51 +1,77 @@
-.team{
+.team {
     background-color: #8870c1b7;
-    color:white;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     border-radius: 6px;
-    &-members{
+    &-div {
+        display: flex;
+        width: 100%;
+    }
+    &-members {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: center;
     }
-    &-person{
+    &-person {
         margin: 2em;
-        &-photo{
-            width: 250px !important; 
+        &-photo {
+            width: 250px !important;
             height: 250px !important;
             border-radius: 6px;
-            
         }
 
         @media screen and (max-width: 1316px) {
-            &-photo{
-                width: 150px !important; 
+            &-photo {
+                width: 150px !important;
                 height: 150px !important;
             }
         }
 
         @media screen and (max-width: 758px) {
-            &-photo{
-                width: 50px !important; 
+            &-photo {
+                width: 50px !important;
                 height: 50px !important;
             }
         }
-        
-            
-        
-        &-name, &-descript{
+
+        &-name,
+        &-descript {
             text-align: center;
         }
-
     }
-    &-group{
+    &-group {
         text-align: center;
         width: 100%;
     }
 }
 
 .Carousel-root-1 {
-    width: 100%
+    width: 100%;
+}
+
+.tm {
+    &-con {
+        display: flex;
+        flex-direction: column;
+    }
+    &-row {
+        display: flex;
+        flex-direction: row;
+    }
+    &-group {
+    }
+    &-person {
+        &__image {
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            border-radius: 50px;
+        }
+        &__name {
+        }
+        &__description {
+        }
+    }
 }
