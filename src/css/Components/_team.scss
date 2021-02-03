@@ -1,51 +1,126 @@
-.team{
+.team {
     background-color: #8870c1b7;
-    color:white;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     border-radius: 6px;
-    &-members{
+    &-div {
+        display: flex;
+        margin-top: 5%;
+        width: 100%;
+    }
+    &-members {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: center;
     }
-    &-person{
+    &-person {
         margin: 2em;
-        &-photo{
-            width: 250px !important; 
+        &-photo {
+            width: 250px !important;
             height: 250px !important;
             border-radius: 6px;
-            
         }
 
         @media screen and (max-width: 1316px) {
-            &-photo{
-                width: 150px !important; 
+            &-photo {
+                width: 150px !important;
                 height: 150px !important;
             }
         }
 
         @media screen and (max-width: 758px) {
-            &-photo{
-                width: 50px !important; 
+            &-photo {
+                width: 50px !important;
                 height: 50px !important;
             }
         }
-        
-            
-        
-        &-name, &-descript{
+
+        &-name,
+        &-descript {
             text-align: center;
         }
-
     }
-    &-group{
+    &-group {
         text-align: center;
         width: 100%;
     }
 }
 
 .Carousel-root-1 {
-    width: 100%
+    width: 100%;
+}
+
+.tm {
+    &-con {
+        display: flex;
+        flex-direction: column;
+    }
+    &-row {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    &-group {
+        font-family: 'Open Sans';
+        color: $yellow;
+        font-weight: 700;
+        width: 175px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &-person {
+        transition: transform 0.3s, background-color 0.6s;
+        &:hover {
+            cursor: grabbing;
+            z-index: 1000 !important;
+            background-color: rgba($primaryblue, 1);
+            transform: scale(1.5);
+            border: 3px solid $yellow;
+            // margin-left: 30px;
+        }
+        border-radius: 5px;
+        width: 250px;
+        background-color: rgba($primaryblue, 0.9);
+        height: 60px;
+        overflow-y: visible;
+        position: relative;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-right: 10px;
+        &__small {
+            // margin-right: -30px;
+            transform: scale(0.85);
+            background-color: rgba($primaryblue, 0.6);
+            z-index: 500;
+            // & > .tm-person__image {
+            //     width: 100px;
+            //     height: 100px;
+            // }
+        }
+        &__image {
+            width: 50px;
+            margin-right: 10px;
+            z-index: inherit;
+            height: 50px;
+            min-height: 50px;
+            background-size: cover;
+            border-radius: 50px;
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+        &__name {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        &__description {
+        }
+    }
 }
