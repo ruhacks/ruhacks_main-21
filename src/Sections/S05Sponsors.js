@@ -68,9 +68,8 @@ export default class S05Sponsors extends Component {
                 background={this.renderBackground}
                 className='sponsor-section'
             >
-                <Heading headingText='Sponsors' />
-                <div className='sponsor-container'>
-                    <div className='sponsor-row'>
+                <Heading headingText='Past Sponsors' extra='yellowText'/>
+                 <div className='sponsor-container'>
                         <Link className='sponsor' href="https://cloud.google.com/">
                             <img src={gcloud} alt='google-cloud'/>
                         </Link>
@@ -83,8 +82,6 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://mlh.io/">
                             <img src={MLH} alt='MLH'/>
                         </Link>
-                    </div>
-                    <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.bmo.com/main/personal">
                             <img src={BMO} alt='BMO'/>
                         </Link>
@@ -94,9 +91,6 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://magnet.today/">
                             <img src={Magnet} alt='Magnet'/>
                         </Link>
-                    </div>
-                    <div className='sponsor-row'>
-                        
                         <Link className='sponsor' href="https://www.resolver.com/">
                             <img src={TechDomains} alt='TechDomains'/>
                         </Link>
@@ -109,8 +103,6 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://www.itradenetwork.com/">
                             <img src={iTrade} alt='iTradeNetwork'/>
                         </Link>
-                    </div>
-                    <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.hypercare.com/">
                             <img src={Hypercare} alt='Hypercare'/>
                         </Link>
@@ -124,8 +116,6 @@ export default class S05Sponsors extends Component {
                             <img src={DMZ} alt='DMZ'/>
                         </Link>
                         
-                    </div>
-                    <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.ee.ryerson.ca/">
                             <img src={ECE} alt='ECE'/>
                         </Link>
@@ -138,8 +128,6 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://www.hackerearth.com/">
                             <img src={hackerearth} alt='hackerearth'/>
                         </Link>
-                    </div>
-                    <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.ryerson.ca/science/">
                             <img src={FOS} alt='FOS'/>
                         </Link>
@@ -153,8 +141,6 @@ export default class S05Sponsors extends Component {
                             <img src={Wolfram} alt='Wolfram'/>
                         </Link>
                         
-                    </div>
-                    <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.brainpower.ca/">
                             <img src={BrainPower} alt='BrainPower'/>
                         </Link>
@@ -167,8 +153,6 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://www.rssonline.ca/">
                             <img src={RSS} alt='RSS'/>
                         </Link>
-                    </div>
-                    <div className='sponsor-row'>
                         <Link className='sponsor' href="https://www.ress.ca/">
                             <img src={RESS} alt='RESS'/>
                         </Link>
@@ -181,7 +165,6 @@ export default class S05Sponsors extends Component {
                         <Link className='sponsor' href="https://www.witm.ca/">
                             <img src={WITM} alt='WITM'/>
                         </Link>
-                    </div>
                 </div>
             </Section>
         );

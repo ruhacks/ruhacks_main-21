@@ -1,17 +1,36 @@
 .colorBannerBack {
     height: 100%;
     width: 100%;
-    // background-image: linear-gradient(
-    //     to bottom,
-    //     rgba(3, 25, 97, 0.822) 11.2%,
-    //     rgba(51, 8, 103, 1) 92.5%
-    // );
+    /* background-image: linear-gradient(
+        to bottom,
+        rgba(3, 25, 97, 0.822) 30%,
+        rgba(49, 33, 87, 1) 68.5%
+    ); */
     background-color: $secondaryblue;
 }
 
 .bannerBack {
     overflow: hidden;
 }
+
+.cloud{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+
+    &-small{
+        position: absolute;
+        width: 10%;
+        top: 33%;
+        right: 77%;
+    }
+}
+
 
 .DSQ {
     position: absolute;
@@ -23,21 +42,19 @@
     z-index: 500;
 }
 
-.bannerTitle {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding-top: 6em;
+@media screen and (max-width: 800px){
+    .DSQ{
+        transform: translate(-50%, 8%);
+        height: 110%
+    }
+}
+@media screen and (max-width: 420px){
+    .DSQ{
+        transform: translate(-50%, 5%);
+        height: 140%
+    }
 }
 
-.bannerContent {
-    padding-top: 1.5em;
-}
-
-.mainLogo {
-    width: 200px;
-    height: 200px;
-}
 
 button.upcoming {
     border-color: rgb(255, 0, 119);
@@ -46,3 +63,78 @@ button.upcoming {
 div.banner {
     z-index: 500;
 }
+
+.intro {
+    &-con {
+        color: white;
+        display: flex;
+        position: relative;
+        margin-top:25%;
+        margin-left: 30%;
+        font-family: 'Poppins';
+
+        @media (max-height: 1000px){
+            margin-top: 16%;
+        }
+
+        @media (max-width: 800px){
+            margin-top: 47%;
+            margin-left: 16%;
+        }
+
+        @media (max-width: 566px){
+            flex-flow: wrap;
+        }
+    }
+    
+    &-text {
+        font-family: 'Poppins';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & > div {
+            font-family: inherit;
+        }
+        
+    }
+    
+    &-img {
+        margin-right: 15px;
+        width: 200px;
+
+        @media (max-width: 1300px){
+            width: 150px;
+        }
+        @media (max-width: 992px){
+            width: 120px;
+        }
+        @media (max-width: 600px){
+            width: 100px;
+        }
+    }
+    &-hackathon {
+        font-size: 90px;
+        font-weight: 600;
+
+        line-height: 48px;
+        margin-bottom: 10px;
+        @media (max-width: 1300px){
+            font-size: 60px;
+        }
+        @media (max-width: 992px){
+            font-size: 50px;
+        }
+    }
+    &-slogan {
+        font-size: 60px;
+        @media (max-width: 1300px){
+            font-size: 50px;
+        }
+        @media (max-width: 992px){
+            font-size: 40px;
+        }
+    }
+    &-socials {
+    }
+}
+

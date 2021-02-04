@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import 'css/main.scss';
 import App from './App';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider, createMuiTheme, responsiveFontSizes  } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
+let theme = createMuiTheme({
     palette: {
         primary: {
             light: '#3159a8',
@@ -35,6 +35,8 @@ const theme = createMuiTheme({
         },
     }
 });
+
+theme = responsiveFontSizes(theme)
 
 ReactDOM.render(
     <React.StrictMode>

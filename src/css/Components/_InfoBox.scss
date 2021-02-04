@@ -3,14 +3,39 @@
 }
 
 .section-info {
-    margin: 30px;
     text-align: center;
     color: white;
-    background-color: rgb(38, 66, 136);
+    background-color: rgba(29, 34, 66, 0.95);
     border-radius: 5px;
     padding: 20px 20px 20px 20px;
     width: 25%;
     position: relative;
+    height: fit-content;
+    div.inner-box-div.hover{
+        cursor: pointer;
+    }
+}
+.arrow-hover{
+    transition: all 1s ease;
+    
+}
+
+.arrow-hover{
+    transform: rotate(0deg);
+    transition: transform 0.2s linear;
+  }
+  
+.arrow-hover.open{
+    transform: rotate(180deg);
+    transition: transform 0.2s linear;
+  }
+
+@media screen and (max-width: 650px){
+    .section-info{
+        width: 100%;
+        margin-bottom: 1em;
+        margin-top: 1em
+    }
 }
 
 hr{

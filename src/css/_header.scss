@@ -52,9 +52,19 @@
         background-color: transparent;
         border: 3px solid white;
         border-radius: 6px;
-        p{
-            color:white;
+        @media (max-width: 800px){
+            right: 15%;
         }
+        @media (max-width: 526px){
+            right: 20%;
+        }
+        p.MuiTypography-body1{
+            color:white;
+            @media (max-width: 800px){
+                font-size: 0.8rem;
+            }
+        }
+        
     }
     &-mlh {
         width: 75px;

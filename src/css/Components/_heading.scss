@@ -16,14 +16,15 @@
     }
     &-box {
         position: absolute;
-
-        border-bottom: 5px solid yellow;
-        border-right: 5px solid yellow;
+        text-align: center;
+        border-left: 5px solid #ffdc00;
+        border-bottom: 5px solid #ffdc00;
+        border-right: 5px solid #ffdc00;
         bottom: -5px;
         right: -5px;
         z-index: 900;
-        height: 18px;
-        width: 50%;
+        height: 100%;
+        width: 100%;
         border-radius: 5px;
     }
     &-boxL {
@@ -40,17 +41,29 @@
     margin: 0 auto;
     &-text {
         z-index: 600;
+        font-family: 'Poppins';
+        font-size: 60px;
         position: relative;
-        color: black;
-        text-shadow: 0.07em 0 #0001, 0 0.07em #0001, -0.07em 0 #0001, 0 -0.07em #0001;
+        color: $teal;
+        text-shadow: 0px 2px black;
+
+        @media (max-width: 500px) {
+            font-size: 40px;
+        }
+        @media (max-width: 350px) {
+            font-size: 35px;
+        }
+    }
+    &-text.yellowText{
+        color: $yellow;
     }
     &-textBox {
         text-align: center;
         color: white;
-        background-color: #004c94;
+        background-color: #264288bf;
         border-radius: 5px;
         padding: 20px 20px 20px 20px;
-        box-shadow: 16px 13px #ffdc00;
+        box-shadow: 45px 0px #ffdc00;
         width: 50%;
         margin: 0 auto;
     }

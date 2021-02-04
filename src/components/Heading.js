@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 
 export default class Heading extends Component {
     render() {
-        const { headingText, old } = this.props  
+        const { headingText, old, extra } = this.props
+        let headingTextClass = 'heading-text' 
+        if(extra) headingTextClass = headingTextClass + ' ' + extra
         if(old){ //For testing purposes
             return (
                 <div className='heading-textBox'>
@@ -18,7 +20,7 @@ export default class Heading extends Component {
                 <div className="heading-bg" />
                 <div className="heading-box" />
                 <div className="heading-box heading-boxL" />
-                <div className="heading-text">{headingText}</div>
+                <div className={headingTextClass}>{headingText}</div>
             </h2>
         );
     }

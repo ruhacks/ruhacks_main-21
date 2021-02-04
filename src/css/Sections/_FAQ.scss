@@ -1,8 +1,8 @@
 .colorFAQBack {
     height: 100%;
     width: 100%;
-    // background: linear-gradient(to bottom, #a05162, #227df5);
-    background-color: $midblue;
+    //background: linear-gradient(to bottom, #a05162, #227df5);
+    background-color: #1d2d7bf5; //#1d2d7bf5
 }
 
 .ROM {
@@ -13,12 +13,23 @@
     top: 40%;
     z-index: 500;
 }
+.ROM-BACK {
+    position: absolute;
+    height: 100%;
+    width: 180%;
+    transform: translate(-22%, 50%);
+    z-index: -1;
+}
 
 .faq-container-info{
     display: flex;
     width: 100%;
+    height: 90%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 2rem;
+    div.section-info{
+        align-self: stretch;
+    }
 }

@@ -26,12 +26,12 @@ export default class S02About extends Component {
     renderContainerBackground() {
         return (
                 <div className='bannerBack'>
-                    <Parallax className="CN" y={[-5, 5]} tagOuter="figure">
+                    <Parallax className="CN" y={[-10, -5]} tagOuter="figure">
                         <Fade>
                             <img src={CN} alt='CN Tower'/>
                         </Fade>
                     </Parallax>
-                    <Parallax className="CN-BACK" y={[-5, 5]} tagOuter="figure">
+                    <Parallax className="CN-BACK" y={[0, 5 ]} tagOuter="figure">
                         <Fade>
                             <img src={CN_BACK} alt='CN Tower'/>
                         </Fade>
@@ -45,12 +45,10 @@ export default class S02About extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >  
-                <Fade top>
-                    <Heading headingText='About RU Hacks' old={true}/>
-                </Fade>
+                <Heading headingText='About RU Hacks'/>
                 <div className='rules-container-info'>
-                    <InfoBox infoTitle = {infoBoxTitles.About.whatIs} infoText = {infoBoxDescription.AboutAnswers.whatIs} />
-                    <InfoBox infoTitle = {infoBoxTitles.About.whyGo} infoText = {infoBoxDescription.AboutAnswers.whyGo} />
+                    <InfoBox infoTitle = {infoBoxTitles.About.whatIs} titleVariant = "h4"  infoText = {infoBoxDescription.AboutAnswers.whatIs} textVariant = "h5" permanentOpen = {true}/>
+                    <InfoBox infoTitle = {infoBoxTitles.About.whyGo} titleVariant = "h4" infoText = {infoBoxDescription.AboutAnswers.whyGo} textVariant = "h5"  permanentOpen = {true}/>
                 </div>
             </Section>
         );
