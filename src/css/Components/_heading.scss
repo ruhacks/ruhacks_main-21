@@ -41,11 +41,11 @@
     margin: 0 auto;
     &-text {
         z-index: 600;
-        font-family: 'Poppins';
+        font-family: 'Helvetica';
         font-size: 60px;
         position: relative;
         color: $teal;
-        text-shadow: 2px 2px black;
+        text-shadow: 0px 2px black;
     }
     &-text.yellowText{
         color: $yellow;
