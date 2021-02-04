@@ -5,7 +5,8 @@
 .section-info {
     text-align: center;
     color: white;
-    background-color: rgba(29, 34, 66, 0.95);
+    background-color: $text;
+    text-shadow: 2px 2px black;
     border-radius: 5px;
     padding: 20px 20px 20px 20px;
     width: 25%;

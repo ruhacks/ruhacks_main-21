@@ -68,7 +68,7 @@ export default class S05Sponsors extends Component {
                 background={this.renderBackground}
                 className='sponsor-section'
             >
-                <Heading headingText='Sponsors' extra='yellowText'/>
+                <Heading headingText='Past Sponsors' extra='yellowText'/>
                  <div className='sponsor-container'>
                     <div className='sponsor-row'>
                         <Link className='sponsor' href="https://cloud.google.com/">

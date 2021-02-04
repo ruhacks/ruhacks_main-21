@@ -47,8 +47,8 @@ export default class S02About extends Component {
             >  
                 <Heading headingText='About RU Hacks'/>
                 <div className='rules-container-info'>
-                    <InfoBox infoTitle = {infoBoxTitles.About.whatIs} titleVariant = "h4"  infoText = {infoBoxDescription.AboutAnswers.whatIs} textVariant = "h6" permanentOpen = {true}/>
-                    <InfoBox infoTitle = {infoBoxTitles.About.whyGo} titleVariant = "h4" infoText = {infoBoxDescription.AboutAnswers.whyGo} textVariant = "h6"  permanentOpen = {true}/>
+                    <InfoBox infoTitle = {infoBoxTitles.About.whatIs} titleVariant = "h4"  infoText = {infoBoxDescription.AboutAnswers.whatIs} textVariant = "h5" permanentOpen = {true}/>
+                    <InfoBox infoTitle = {infoBoxTitles.About.whyGo} titleVariant = "h4" infoText = {infoBoxDescription.AboutAnswers.whyGo} textVariant = "h5"  permanentOpen = {true}/>
                 </div>
             </Section>
         );

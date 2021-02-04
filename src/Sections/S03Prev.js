@@ -28,12 +28,12 @@ export default class S03Prev extends Component {
     renderContainerBackground() {
         return (
             <div className="bannerBack">
-                <Parallax className="SLC" y={[0, 5]} tagOuter="figure">
+                <Parallax className="SLC" y={[0, 15]} tagOuter="figure">
                     <Fade>
                         <img src={SLC} alt="Ryerson Student Learning center" />
                     </Fade>
                 </Parallax>
-                <Parallax className="SLC-BACK" y={[-15, 10]} tagOuter="figure">
+                <Parallax className="SLC-BACK" y={[-15, 25]} tagOuter="figure">
                     <img src={SLC_BACK} alt="SLC BACKGROUND" />
                 </Parallax>
             </div>
