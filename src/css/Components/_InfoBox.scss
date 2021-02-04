@@ -11,7 +11,24 @@
     width: 25%;
     position: relative;
     height: fit-content;
+    div.inner-box-div.hover{
+        cursor: pointer;
+    }
 }
+.arrow-hover{
+    transition: all 1s ease;
+    
+}
+
+.arrow-hover{
+    transform: rotate(0deg);
+    transition: transform 0.2s linear;
+  }
+  
+.arrow-hover.open{
+    transform: rotate(180deg);
+    transition: transform 0.2s linear;
+  }
 
 @media screen and (max-width: 650px){
     .section-info{

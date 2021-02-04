@@ -13,6 +13,25 @@
     transform: translate(-50%, 0);
     padding-top: 5rem;
     z-index: 500;
+
+    @media (max-width: 1272px){
+        transform: translate(-50%, 5%);
+    }
+    @media (max-width: 1200px){
+        transform: translate(-50%, 17%);
+    }
+    @media (max-width: 991px){
+        transform: translate(-50%, 34%);
+    }
+    @media (max-width: 650px){
+        transform: translate(-77%, 42%);
+    }
+    @media (max-width: 500px){
+        transform: translate(-77%, 52%);
+    }
+    @media (max-width: 400px){
+        transform: translate(-77%, 60%);
+    }
 }
 
 .SLC-BACK {
@@ -21,6 +40,21 @@
     width: 200%;
     transform: translate(-20%, 0);
     z-index: 300;
+    @media (max-width: 1200px){
+        transform: translate(-20%, 15%);
+    }
+    @media (max-width: 991px){
+        transform: translate(-20%, 43%);
+    }
+    @media (max-width: 650px){
+        transform: translate(-20%, 49%);
+    }
+    @media (max-width: 500px){
+        transform: translate(-20%, 60%);
+    }
+    @media (max-width: 400px){
+        transform: translate(-20%, 65%);
+    }
 }
 
 .statistics {

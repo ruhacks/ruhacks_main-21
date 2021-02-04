@@ -163,12 +163,12 @@ let teammembers = [
         members: [
             {
                 name: 'Nazifa',
-                description: '',
+                description: 'Freelancer',
                 personComponent: Nazifa,
             },
             {
                 name: 'Sam',
-                description: '',
+                description: 'Dishonorably Discharged',
                 personComponent: Sam,
             },
         ],

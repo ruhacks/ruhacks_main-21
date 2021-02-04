@@ -28,7 +28,7 @@ export default class S01Intro extends Component {
     renderContainerBackground() {
         return (
         <div className='bannerBack'>
-            <img className="DSQ" src={DSQ} alt='Dundas Square'/>
+            <img className="DSQ " src={DSQ} alt='Dundas Square'/>
             <img className='cloud moving-left' src={cloud} alt='cloud' />
             <img className='cloud-small' src={cloud2} alt='cloud' />
         </div>
@@ -37,7 +37,7 @@ export default class S01Intro extends Component {
 
     renderIntro = () => {
         return (
-            <div className="intro-con " id="bannerTitle">
+            <div className="intro-con fade-in" id="bannerTitle">
                 <img className="intro-img" src={EggwardSitting} alt='Eggy'></img>
                 <div className="intro-text">
                     <div className="intro-hackathon">RU Hacks 2021</div>
