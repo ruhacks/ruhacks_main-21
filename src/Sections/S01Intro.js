@@ -15,6 +15,8 @@ import cloud4 from 'images/cloud4.png'
 import { Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core'
 import axios from "axios";
 
+const API_URL = 'http://localhost:5000/signup'
+
 export default class S01Intro extends Component {
 
     constructor(props){
@@ -24,6 +26,8 @@ export default class S01Intro extends Component {
             newsletterModal: false,
             email: '',
             name: '',
+            successText: '',
+            failText: '',
             signedUp: false,
             submitted: false,
             newsletterErr: false,
@@ -50,14 +54,6 @@ export default class S01Intro extends Component {
     }
 
     handleNewsletterSignup(){
-        console.log('submitted!!!')
-        this.setState({
-            signedUp: true,
-            submitted: true,
-            progress: false,
-            newsletterErr: false,
-        })
-        return
         let formData = {};
         const { email, name } = this.state
         formData['EMAIL'] = email
@@ -66,13 +62,20 @@ export default class S01Intro extends Component {
             submitted: true,
             progress: true,
         })
-        axios.post('http://localhost:5000/signup', {formData})
+        axios.post(API_URL, {formData})
         .then(response => {
+            let responseTxt= ''
+            if(response.data.added_subscription){
+                responseTxt= 'You have been sucessfully signed up!'
+            }else if(response.data.already_subscribed){
+                responseTxt = 'Looks like we already got you!'
+            }
             this.setState({
                 signedUp: true,
                 submitted: true,
                 progress: false,
                 newsletterErr: false,
+                successText: responseTxt,
             })
         })
         .catch(error => {
@@ -81,6 +84,7 @@ export default class S01Intro extends Component {
                 submitted: true,
                 progress: false,
                 newsletterErr: true,
+                errorText: 'ERROR!'
             })
         })
     }
@@ -154,13 +158,13 @@ export default class S01Intro extends Component {
                         To subscribe to our monthly newsletter, please enter your email address and name here.
                     </DialogContentText>
                     {(this.state.signedUp && !this.state.progress) && (
-                        <p classes='success'>
-                        You have sucessfully signed up
+                        <p className='success'>
+                            {this.state.successText}
                         </p>
                     )}
                     {(this.state.newsletterErr && !this.state.progress) && (
-                        <p classes='failure'>
-                            Error! Please contact us
+                        <p className='failure'>
+                            {this.state.failText}
                         </p>
                     )}
                     <TextField
