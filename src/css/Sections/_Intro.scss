@@ -16,19 +16,12 @@
 .cloud{
     width: 20%;
     position: absolute;
-    top: 10%;
-    right: 0;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 2s ease-in-out; /** Firefox **/
-    -o-transition: all 2s ease-in-out; /** Opera **/
 
-    &-small{
-        position: absolute;
-        width: 10%;
-        top: 33%;
-        right: 77%;
-    }
+    -webkit-filter: drop-shadow(1.75px 1.75px 1.75px rgb(0, 114, 180));
+    filter: drop-shadow(1.75px 1.75px 1.75px rgb(0, 114, 180));
+    mix-blend-mode: multiply;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
 
@@ -40,6 +33,11 @@
     transform: translate(-50%, 0);
     padding-top: 5rem;
     z-index: 500;
+
+    @media (max-height: 700px){
+        height:80%;
+        transform: translate(-50%, 20%);
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -55,6 +53,13 @@
     }
 }
 
+p.success{
+    color: green;
+}
+
+p.failure{
+    color:red;
+}
 
 button.upcoming {
     border-color: rgb(255, 0, 119);
@@ -101,9 +106,9 @@ div.banner {
     &-img {
         margin-right: 15px;
         width: 200px;
-
+        object-fit: contain;
         @media (max-width: 1300px){
-            width: 150px;
+            height: 184px;
         }
         @media (max-width: 992px){
             width: 120px;
@@ -136,5 +141,22 @@ div.banner {
     }
     &-socials {
     }
+    &-newsletter{
+        line-height: initial;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    &-newsletter:hover{
+        font-size: 32px;
+    }
 }
 
+.modalContainer{
+    margin-left: 40%;
+    margin-top: 25%;
+}
+
+.modalPaper{
+    width: 25%;
+    padding: 2rem;
+}

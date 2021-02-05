@@ -18,7 +18,8 @@
     height: 100%;
     width: 180%;
     transform: translate(-22%, 50%);
-    z-index: -1;
+    z-index: 200;
+    overflow: initial;
 }
 
 .faq-container-info{
