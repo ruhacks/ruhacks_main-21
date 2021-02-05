@@ -53,20 +53,40 @@
     }
 }
 
-$clouds: 10;
+$left_clouds: 5;
+$right_clouds: 5;
 
-@for $i from 0 through $clouds {
-  img.cloud:nth-child(#{$i + 1}) {
-     left: random(150) / 150 * 100% + 50%;
-     top: random(100) / 100 * 90%;
-     transform: scale(random(2) - 0.5);
-     opacity: random(60) / 100;
-     animation: moveclouds random(20) + 20 + s linear infinite;
-  }
+
+@keyframes movecloudsRight
+{
+    100% {
+        right: -75%;
+    }
+}
+@keyframes movecloudsLeft {
+    100% {
+      left: -75%;
+    }
 }
 
-@keyframes moveclouds {
-  100% {
-    left: -100%;
+@for $i from 0 through $left_clouds {
+  img.cloud-left:nth-child(#{$i + 1}) {
+     left: random(150) / 150 * 100% + 100%;
+     top: random(90) / 90 * 50%;
+     transform: scale(random(2) - 0.5);
+     opacity: random(60) / 100;
+     animation: movecloudsLeft random(20) + 55 + s linear infinite;
   }
+
+}
+
+
+@for $a from 4 through 9 {
+    img.cloud-right:nth-child(#{$a + 1}){
+        right: random(150) / 150 * 100% + 100%;
+        top: random(100) / 100 * 50%;
+        transform: scale(random(2) - 0.3);
+        opacity: random(60) / 100;
+        animation: movecloudsRight random(20) + 55 + s linear infinite;
+    }
 }

@@ -5,11 +5,15 @@ import DSQ from 'images/backgrounds/DSQ/DSQ_NO_LINET.svg'
 
 import RuLogoRGB from '../images/RU_RGB.svg'
 import EggwardSitting from 'images/eggward/sit2.png';
-import cloud from 'images/cloud3.png'
+import cloud from 'images/cloud.png'
 import cloud2 from 'images/cloud2.png'
+import cloud3 from 'images/cloud3.png'
+import cloud4 from 'images/cloud4.png'
 
 
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core'
+
+import { Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core'
+import axios from "axios";
 
 export default class S01Intro extends Component {
 
@@ -20,13 +24,17 @@ export default class S01Intro extends Component {
             newsletterModal: false,
             email: '',
             name: '',
+            signedUp: false,
+            submitted: false,
+            newsletterErr: false,
+            progress: false,
         }
 
         this.handleEmailChange = this.handleEmailChange.bind(this)
         this.handleNameChange = this.handleNameChange.bind(this)
         this.setCloseMode = this.setCloseMode.bind(this)
         this.setOpenMode = this.setOpenMode.bind(this)
-
+        this.handleNewsletterSignup = this.handleNewsletterSignup.bind(this)
     }
 
     handleEmailChange({target}){
@@ -42,7 +50,39 @@ export default class S01Intro extends Component {
     }
 
     handleNewsletterSignup(){
-        console.log('sign me up fam')
+        console.log('submitted!!!')
+        this.setState({
+            signedUp: true,
+            submitted: true,
+            progress: false,
+            newsletterErr: false,
+        })
+        return
+        let formData = {};
+        const { email, name } = this.state
+        formData['EMAIL'] = email
+        formData['NAME'] = name
+        this.setState({
+            submitted: true,
+            progress: true,
+        })
+        axios.post('http://localhost:5000/signup', {formData})
+        .then(response => {
+            this.setState({
+                signedUp: true,
+                submitted: true,
+                progress: false,
+                newsletterErr: false,
+            })
+        })
+        .catch(error => {
+            this.setState({
+                signedUp: false,
+                submitted: true,
+                progress: false,
+                newsletterErr: true,
+            })
+        })
     }
 
     setCloseMode = () => {
@@ -74,7 +114,15 @@ export default class S01Intro extends Component {
         return (
         <div className='bannerBack'>
             <img className="DSQ " src={DSQ} alt='Dundas Square'/>
-
+            <img className="cloud cloud-left" src={cloud} alt='Cloud'/>
+            <img className="cloud cloud-left" src={cloud2} alt='Cloud'/>
+            <img className="cloud cloud-left" src={cloud3} alt='Cloud'/>
+            <img className="cloud cloud-left" src={cloud4} alt='Cloud'/>
+            <img className="cloud cloud-left" src={cloud} alt='Cloud'/>
+            <img className="cloud cloud-right" src={cloud4} alt='Cloud'/>
+            <img className="cloud cloud-right" src={cloud2} alt='Cloud'/>
+            <img className="cloud cloud-right" src={cloud3} alt='Cloud'/>
+            <img className="cloud cloud-right" src={cloud} alt='Cloud'/>
         </div>
         );
     }
@@ -87,7 +135,6 @@ export default class S01Intro extends Component {
                     <div className="intro-hackathon">RU Hacks 2021</div>
                     <div className="intro-slogan">Digitally Together!</div>
                     <div className="intro-newsletter" onClick={this.setOpenMode}> {">"} signup for our newsletter!</div>
-                    <div className="intro-socials"> {">"} socials</div>
                 </div>
             </div>
         );
@@ -106,6 +153,16 @@ export default class S01Intro extends Component {
                     <DialogContentText>
                         To subscribe to our monthly newsletter, please enter your email address and name here.
                     </DialogContentText>
+                    {(this.state.signedUp && !this.state.progress) && (
+                        <p classes='success'>
+                        You have sucessfully signed up
+                        </p>
+                    )}
+                    {(this.state.newsletterErr && !this.state.progress) && (
+                        <p classes='failure'>
+                            Error! Please contact us
+                        </p>
+                    )}
                     <TextField
                         autoFocus
                         margin="dense"
@@ -113,6 +170,7 @@ export default class S01Intro extends Component {
                         name='EMAIL'
                         label="Email Address"
                         type="email"
+                        onChange={this.handleEmailChange}
                         fullWidth
                     />
                     <TextField
@@ -120,6 +178,7 @@ export default class S01Intro extends Component {
                         id="NAME"
                         name='NAME'
                         label="Name"
+                        onChange={this.handleNameChange}
                         fullWidth
                     />
                 </DialogContent>
@@ -130,6 +189,9 @@ export default class S01Intro extends Component {
                     <Button onClick={this.handleNewsletterSignup} color="primary">
                         Subscribe
                     </Button>
+                    {(this.state.progress) && (
+                        <CircularProgress />
+                    )}
                 </DialogActions>
             </Dialog>
         )
