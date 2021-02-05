@@ -40,6 +40,11 @@
     transform: translate(-50%, 0);
     padding-top: 5rem;
     z-index: 500;
+
+    @media (max-height: 700px){
+        height:80%;
+        transform: translate(-50%, 20%);
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -101,9 +106,9 @@ div.banner {
     &-img {
         margin-right: 15px;
         width: 200px;
-
+        object-fit: contain;
         @media (max-width: 1300px){
-            width: 150px;
+            height: 184px;
         }
         @media (max-width: 992px){
             width: 120px;
@@ -136,5 +141,17 @@ div.banner {
     }
     &-socials {
     }
+    &-newsletter{
+        cursor: pointer;
+    }
 }
 
+.modalContainer{
+    margin-left: 40%;
+    margin-top: 25%;
+}
+
+.modalPaper{
+    width: 25%;
+    padding: 2rem;
+}

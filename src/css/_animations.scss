@@ -6,9 +6,6 @@
     -ms-animation: fadeIn ease 2s;
 }
 
-.moving-left{
-
-}
 
 
 @keyframes fadeIn {
@@ -54,4 +51,22 @@
     100% {
         opacity: 1;
     }
+}
+
+$clouds: 10;
+
+@for $i from 0 through $clouds {
+  img.cloud:nth-child(#{$i + 1}) {
+     left: random(150) / 150 * 100% + 50%;
+     top: random(100) / 100 * 90%;
+     transform: scale(random(2) - 0.5);
+     opacity: random(60) / 100;
+     animation: moveclouds random(20) + 20 + s linear infinite;
+  }
+}
+
+@keyframes moveclouds {
+  100% {
+    left: -100%;
+  }
 }

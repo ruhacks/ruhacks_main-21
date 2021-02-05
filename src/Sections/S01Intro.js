@@ -9,9 +9,54 @@ import cloud from 'images/cloud3.png'
 import cloud2 from 'images/cloud2.png'
 
 
-import { Button, Typography } from '@material-ui/core'
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core'
 
 export default class S01Intro extends Component {
+
+    constructor(props){
+        super(props)
+
+        this.state ={
+            newsletterModal: false,
+            email: '',
+            name: '',
+        }
+
+        this.handleEmailChange = this.handleEmailChange.bind(this)
+        this.handleNameChange = this.handleNameChange.bind(this)
+        this.setCloseMode = this.setCloseMode.bind(this)
+        this.setOpenMode = this.setOpenMode.bind(this)
+
+    }
+
+    handleEmailChange({target}){
+        this.setState({
+            email: target.value
+        })
+    }
+
+    handleNameChange({target}){
+        this.setState({
+            name: target.value
+        })
+    }
+
+    handleNewsletterSignup(){
+        console.log('sign me up fam')
+    }
+
+    setCloseMode = () => {
+        this.setState({
+            newsletterModal: false
+        })
+    }
+
+    setOpenMode(){
+        this.setState({
+            newsletterModal: true
+        })
+    }
+
     /**
      * Use this for setting the color for hte full section
      * Make the width and height of the returning div 100%
@@ -29,8 +74,7 @@ export default class S01Intro extends Component {
         return (
         <div className='bannerBack'>
             <img className="DSQ " src={DSQ} alt='Dundas Square'/>
-            <img className='cloud moving-left' src={cloud} alt='cloud' />
-            <img className='cloud-small' src={cloud2} alt='cloud' />
+
         </div>
         );
     }
@@ -42,14 +86,57 @@ export default class S01Intro extends Component {
                 <div className="intro-text">
                     <div className="intro-hackathon">RU Hacks 2021</div>
                     <div className="intro-slogan">Digitally Together!</div>
-                    <div className="intro-signup"> {">"} signup</div>
+                    <div className="intro-newsletter" onClick={this.setOpenMode}> {">"} signup for our newsletter!</div>
                     <div className="intro-socials"> {">"} socials</div>
                 </div>
             </div>
         );
     };
 
+    renderModalForSignup = () => {
+
+        return(
+            <Dialog 
+                open={this.state.newsletterModal}
+                onClose={this.setCloseMode}
+                aria-labelledby='form-dialog-title'
+            >
+                <DialogTitle id='form-dialog-title'>Subscribe to our newsletter</DialogTitle>
+                <DialogContent>
+                    <DialogContentText>
+                        To subscribe to our monthly newsletter, please enter your email address and name here.
+                    </DialogContentText>
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        id="EMAIL"
+                        name='EMAIL'
+                        label="Email Address"
+                        type="email"
+                        fullWidth
+                    />
+                    <TextField
+                        margin="dense"
+                        id="NAME"
+                        name='NAME'
+                        label="Name"
+                        fullWidth
+                    />
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={this.setCloseMode} color="primary">
+                        Cancel
+                    </Button>
+                    <Button onClick={this.handleNewsletterSignup} color="primary">
+                        Subscribe
+                    </Button>
+                </DialogActions>
+            </Dialog>
+        )
+    }
+
     render() {
+        console.log(this.state)
         return (
             <Section
                 cbackground={this.renderContainerBackground}
@@ -57,6 +144,7 @@ export default class S01Intro extends Component {
                 className='banner'
             >
                 {this.renderIntro()}
+                {this.renderModalForSignup()}
             </Section>
         );
     }
