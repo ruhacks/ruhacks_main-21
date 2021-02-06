@@ -107,6 +107,11 @@ div.banner {
         margin-right: 15px;
         width: 200px;
         object-fit: contain;
+        -webkit-filter: drop-shadow(1.75px 1.75px 1.75px rgb(0, 114, 180));
+        filter: drop-shadow(1.75px 1.75px 1.75px rgb(0, 114, 180));
+        mix-blend-mode: multiply;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
         @media (max-width: 1300px){
             height: 184px;
         }
