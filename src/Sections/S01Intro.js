@@ -202,7 +202,6 @@ export default class S01Intro extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <Section
                 cbackground={this.renderContainerBackground}
