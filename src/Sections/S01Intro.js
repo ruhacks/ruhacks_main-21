@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Section from "../components/Section";
 import { Parallax } from 'react-scroll-parallax';
-import DSQ from 'images/backgrounds/DSQ/DSQ_NO_LINET.svg'
+import DSQ from 'images/backgrounds/DSQ/DSQ_IMGS.svg'
 
 import RuLogoRGB from '../images/RU_RGB.svg'
 import EggwardSitting from 'images/eggward/sit2.png';
@@ -202,7 +202,6 @@ export default class S01Intro extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <Section
                 cbackground={this.renderContainerBackground}

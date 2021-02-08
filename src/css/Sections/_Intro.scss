@@ -34,24 +34,20 @@
     padding-top: 5rem;
     z-index: 500;
 
-    @media (max-height: 700px){
-        height:80%;
-        transform: translate(-50%, 20%);
-    }
-}
 
-@media screen and (max-width: 800px){
-    .DSQ{
+    @media (max-width: 800px){
         transform: translate(-50%, 8%);
         height: 110%
     }
-}
-@media screen and (max-width: 420px){
-    .DSQ{
+
+    @media (max-width: 420px){
         transform: translate(-50%, 5%);
         height: 140%
     }
+
+   
 }
+
 
 p.success{
     color: green;
@@ -78,12 +74,13 @@ div.banner {
         margin-left: 30%;
         font-family: 'Poppins';
 
-        @media (max-height: 1000px){
-            margin-top: 16%;
+        @media (max-width: 800px){
+            margin-top: 30%;
+            margin-left: 16%;
         }
 
-        @media (max-width: 800px){
-            margin-top: 47%;
+        @media (max-width: 400px){
+            margin-top: 60%;
             margin-left: 16%;
         }
 
@@ -106,7 +103,13 @@ div.banner {
     &-img {
         margin-right: 15px;
         width: 200px;
+        height: fit-content;
         object-fit: contain;
+        -webkit-filter: drop-shadow(1.75px 1.75px 1.75px rgb(0, 114, 180));
+        filter: drop-shadow(1.75px 1.75px 1.75px rgb(0, 114, 180));
+        mix-blend-mode: multiply;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
         @media (max-width: 1300px){
             height: 184px;
         }
@@ -115,6 +118,10 @@ div.banner {
         }
         @media (max-width: 600px){
             width: 100px;
+        }
+        @media (max-width: 400px){
+            width: 80px;
+            height: 124px;
         }
     }
     &-hackathon {
@@ -129,6 +136,9 @@ div.banner {
         @media (max-width: 992px){
             font-size: 50px;
         }
+        @media (max-width: 650px){
+            font-size: 35px
+        }
     }
     &-slogan {
         font-size: 60px;
@@ -138,6 +148,9 @@ div.banner {
         @media (max-width: 992px){
             font-size: 40px;
         }
+        @media (max-width: 650px){
+            font-size: 25px
+        }
     }
     &-socials {
     }
@@ -145,6 +158,9 @@ div.banner {
         line-height: initial;
         font-size: 30px;
         cursor: pointer;
+        @media (max-width: 650px){
+            font-size: 15px
+        }
     }
     &-newsletter:hover{
         font-size: 32px;
