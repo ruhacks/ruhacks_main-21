@@ -45,15 +45,15 @@ export default class S04FAQ extends Component {
             >
                 <Heading headingText='Frequently Asked Questions' extra='yellowText'/>
                 <div className='faq-container-info'>
-                    <InfoBox hoverMode={true} infoTitle = {infoBoxTitles.FAQ.whoCanAttend} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.whoCanAttend} textVariant = "h6"/>
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.howWillIGet} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.howWillIGet} textVariant = "h6" />
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.cost} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.cost} textVariant = "h6"/>
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.firstTime} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.firstTime} textVariant = "h6" />
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.workBeforeEvent} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.workBeforeEvent} textVariant = "h6" />
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.judging} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.judging} textVariant = "h6"/>
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.hardware} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.hardware} textVariant = "h6" />
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.maxTeam} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.maxTeam} textVariant = "h6" />
-                    <InfoBox hoverMode={true} infoTitle={infoBoxTitles.FAQ.more} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.more} textVariant = "h6"/>
+                    <InfoBox permanentOpen={true} infoTitle = {infoBoxTitles.FAQ.whoCanAttend} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.whoCanAttend} textVariant = "h6"/>
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.howWillIGet} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.howWillIGet} textVariant = "h6" />
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.cost} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.cost} textVariant = "h6"/>
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.firstTime} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.firstTime} textVariant = "h6" />
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.workBeforeEvent} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.workBeforeEvent} textVariant = "h6" />
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.judging} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.judging} textVariant = "h6"/>
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.hardware} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.hardware} textVariant = "h6" />
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.maxTeam} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.maxTeam} textVariant = "h6" />
+                    <InfoBox permanentOpen={true} infoTitle={infoBoxTitles.FAQ.more} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.more} textVariant = "h6"/>
                 </div>
             </Section>
         );

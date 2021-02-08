@@ -8,6 +8,8 @@ import Fade from 'react-reveal/Fade';
 import { Link } from '@material-ui/core'
 
 import AGO from 'images/backgrounds/AGO/AGO.svg'
+import AGO_BACK from 'images/backgrounds/AGO/AGO_BACK.svg'
+
 
 import gcloud from 'images/past_sponsors/googlecloud.png'
 import lighthouseLabs from 'images/past_sponsors/lighthouselabs.png'
@@ -56,9 +58,11 @@ export default class S05Sponsors extends Component {
         return (<div className='bannerBack'>
         <Parallax className="AGO" y={[-5, 5]} tagOuter="figure">
             <Fade>
-                <img src={AGO} alt='Ryerson Student Learning center'/>
+                <img src={AGO} alt='Art Gallery of Ontario'/>
             </Fade>
         </Parallax>
+        <img className="AGO_BACK" src={AGO_BACK} alt='Line 4'/>
+
     </div>);
     }
     render() {

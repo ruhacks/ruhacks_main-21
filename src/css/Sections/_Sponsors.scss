@@ -15,6 +15,15 @@
     z-index: 500;
 }
 
+.AGO_BACK {
+    position: absolute;
+    height: 100%;
+    width: 543%;
+    transform: translate(-48%, 0%);
+    z-index: 200;
+    overflow: initial;
+}
+
 .sponsor{
     width: fit-content;
     height: fit-content;
