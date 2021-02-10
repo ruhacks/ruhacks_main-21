@@ -137,6 +137,8 @@ export default class S01Intro extends Component {
                     <div className="intro-hackathon">RU Hacks 2021</div>
                     <div className="intro-slogan">Digitally Together!</div>
                     <div className="intro-newsletter" onClick={this.setOpenMode}> {">"} signup for our newsletter!</div>
+                    <div className="intro-newsletter" onClick={this.setOpenMode}> {">"} mentors Signup here!</div>
+
                 </div>
             </div>
         );

@@ -15,11 +15,6 @@ export default class Header extends Component {
                             <Link href='#' variant='body1'>
                                 <img src={whiteLogo} className='navLogo' alt='RU Hacks'/>
                             </Link>
-                            <Link href='#' variant='body1'>
-                                <div className="header-name">
-                                    <Typography variant='body1'>RU HACKS</Typography>
-                                </div> 
-                            </Link>
                             <Link href='https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=white'>
                             <img
                                 src={MLH}

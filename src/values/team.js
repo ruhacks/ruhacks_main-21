@@ -38,12 +38,12 @@ let teammembers = [
         members: [
             {
                 name: 'Annie',
-                description: 'Co-chair',
+                description: 'Co-Chair',
                 personComponent: Annie,
             },
             {
                 name: 'Johnny',
-                description: 'Co-chair',
+                description: 'Co-Chair',
                 personComponent: Johnny,
             },
         ],
