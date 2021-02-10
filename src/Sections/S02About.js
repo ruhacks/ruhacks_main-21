@@ -8,7 +8,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 import {infoBoxTitles, infoBoxDescription} from 'config/Text'
 
-import CN from 'images/backgrounds/CN/CN_NO_BACK.svg'
+import CN from 'images/backgrounds/CN/CN.svg'
 import CN_BACK from 'images/backgrounds/CN/CN_BACK.svg'
 
 export default class S02About extends Component {
