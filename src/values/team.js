@@ -8,7 +8,7 @@ import Marjan from 'images/Team/Marjan.jpg';
 import Charith from 'images/Team/Charith.jpg';
 
 //Dev
-import Dan from 'images/Team/IMG_0072.jpg';
+import Dan from 'images/Team/Dan.jpg';
 import Tarandeep from 'images/Team/Tarandeep.jpeg';
 import Ahmad from 'images/Team/Ahmad.jpg';
 import Farhan from 'images/Team/Farhan.jpg';
@@ -38,12 +38,12 @@ let teammembers = [
         members: [
             {
                 name: 'Annie',
-                description: 'Co-chair',
+                description: 'Co-Chair',
                 personComponent: Annie,
             },
             {
                 name: 'Johnny',
-                description: 'Co-chair',
+                description: 'Co-Chair',
                 personComponent: Johnny,
             },
         ],

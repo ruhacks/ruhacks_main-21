@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Section from "../components/Section";
-import { Parallax } from 'react-scroll-parallax';
 import DSQ from 'images/backgrounds/DSQ/DSQ_IMGS.svg'
 
-import RuLogoRGB from '../images/RU_RGB.svg'
-import EggwardSitting from 'images/eggward/sit2.png';
+import EggwardSitting from 'images/eggward/sit.png';
 import cloud from 'images/cloud.png'
 import cloud2 from 'images/cloud2.png'
 import cloud3 from 'images/cloud3.png'
@@ -139,6 +137,8 @@ export default class S01Intro extends Component {
                     <div className="intro-hackathon">RU Hacks 2021</div>
                     <div className="intro-slogan">Digitally Together!</div>
                     <div className="intro-newsletter" onClick={this.setOpenMode}> {">"} signup for our newsletter!</div>
+                    <div className="intro-newsletter" onClick={this.setOpenMode}> {">"} mentors Signup here!</div>
+
                 </div>
             </div>
         );

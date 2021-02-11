@@ -1,20 +1,10 @@
-import { Typography } from '@material-ui/core';
 import React, { Component } from 'react';
 
 export default class Heading extends Component {
     render() {
-        const { headingText, old, extra } = this.props
+        const { headingText, extra } = this.props
         let headingTextClass = 'heading-text' 
         if(extra) headingTextClass = headingTextClass + ' ' + extra
-        if(old){ //For testing purposes
-            return (
-                <div className='heading-textBox'>
-                    <Typography variant="h4" component="h4">
-                        {headingText} 
-                    </Typography>
-                </div>
-            )
-        }
         return (
             <h2 className="heading">
                 <div className="heading-bg" />

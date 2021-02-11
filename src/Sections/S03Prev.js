@@ -11,7 +11,6 @@ import Team from 'components/TeamList';
 
 import SLC from 'images/backgrounds/SLC/SLC_NO_BACK.svg';
 import SLC_BACK from 'images/backgrounds/SLC/SLC_BACK.svg';
-import Stats from 'images/statistics.svg';
 
 export default class S03Prev extends Component {
     /**
