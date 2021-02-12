@@ -87,22 +87,22 @@ export default class Header extends Component {
                 <AppBar elevation={0}>
                     <Toolbar className="heading-material">
                         <div className="header-con">
-                        <IconButton
-                            color="inherit"
-                            aria-label="open drawer"
-                            onClick={this.handleDrawerOpen}
-                            edge="start"
-                            className={() =>{
-                                if(this.state.openDrawer){
-                                    return 'iconButton-open'
-                                }else{
-                                    return 'iconButton-closed'
-                                }
-                            }}
-                        >
-                            <Menu />
-                        </IconButton>
-                            <Link href='#' variant='body1'>
+                            <IconButton
+                                color="inherit"
+                                aria-label="open drawer"
+                                onClick={this.handleDrawerOpen}
+                                edge="start"
+                                className={() =>{
+                                    if(this.state.openDrawer){
+                                        return 'iconButton-open'
+                                    }else{
+                                        return 'iconButton-closed'
+                                    }
+                                }}
+                            >
+                                <Menu />
+                            </IconButton>
+                            <Link href='#' className='mobile-logo' variant='body1'>
                                 <img src={whiteLogo} className='navLogo' alt='RU Hacks'/>
                             </Link>
                             
