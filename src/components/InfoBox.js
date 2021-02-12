@@ -46,6 +46,20 @@ export default class InfoBox extends Component {
         }
     }
 
+    shouldComponentUpdate(nextProps, nextState){
+        const { permanentOpen } = nextProps
+        if(this.props.permanentOpen !== permanentOpen){
+            this.setState({
+                open: true,
+            })
+            return true;
+        }
+        if(nextState.open !== this.state.open){
+            return true
+        }
+        return false;
+    }
+
     renderNormalInfoBox = () => {
         const { open } = this.state
         const { infoTitle, infoText, permanentOpen, titleVariant, textVariant } = this.props

@@ -68,3 +68,15 @@
         margin: 0 auto;
     }
 }
+
+.mobile-drawer{
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+}

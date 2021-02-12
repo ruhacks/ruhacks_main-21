@@ -15,7 +15,7 @@ export default class S04FAQ extends Component {
 
     constructor(props){
         super(props)
-        this.state = {width: 0, height: 0}
+        this.state = {width: window.innerWidth, height: window.innerWidth}
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -59,9 +59,7 @@ export default class S04FAQ extends Component {
     }
 
     shouldComponentUpdate(nextProps, nextState){
-        console.log('currentstate', this.state)
-        console.log('NEXT STATE', nextState)
-        if(nextState.width <= 650 || (this.state.width < nextState.width && nextState.width > 650)){
+        if(nextState.width <= 650 || (this.state.width < nextState.width && nextState.width > 650 && this.state.width <= 650) || this.state.width === 0){
             return true;
         }
         return false;
@@ -70,10 +68,9 @@ export default class S04FAQ extends Component {
     render() {
         const { width } = this.state;
         let pmOpen = true;
-        if(width <= 650){
+        if(width <= 650 && width !== 0){
             pmOpen = false
         }
-        console.log('render', pmOpen)
         return (
             <Section
                 cbackground={this.renderContainerBackground}

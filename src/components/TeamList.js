@@ -8,13 +8,14 @@ export default class TeamList extends Component {
         return (
             <div className="tm-con">
                 {teammembers.map(({ group, members }) => (
-                    <div className="tm-row">
+                    <div className="tm-row" key={group}>
                         <div className="tm-group">{group}</div>
                         {members.map(({ name, personComponent, description }) => (
                             <div
                                 className={`tm-person ${
                                     this.state.hover ? 'tm-person__small' : ''
                                 }`}
+                                key={name}
                                 onMouseEnter={() => this.setState({ hover: 1 })}
                                 onMouseLeave={() => this.setState({ hover: false })}
                             >
