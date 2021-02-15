@@ -42,6 +42,22 @@ import BrainPower from 'images/sponsors/brain.png'
 import CleanEnergyZone from 'images/sponsors/cleanzone.png'
 import IEEE from 'images/sponsors/ieee.jpg'
 import RSS from 'images/sponsors/ryerson-science-society.png'
+import DCL from 'images/sponsors/DCL.png'
+import Juno from 'images/sponsors/juno.png'
+import iboost from 'images/sponsors/iboost_logo.png'
+import Jetbrains from 'images/sponsors/jetbrains_logo.png'
+import CryptoChicks from 'images/sponsors/CryptoChicks.png'
+import Linode from 'images/sponsors/linode.png'
+import one_password from 'images/sponsors/one_password.png'
+import Voiceflow from 'images/sponsors/voiceflow.png'
+import storagehotel from 'images/sponsors/storagehotel.png'
+import Maplesoft from 'images/sponsors/Maplesoft.png'
+import TheCodex from 'images/sponsors/codex.png'
+import Seds from 'images/sponsors/seds.png'
+import Qoom from 'images/sponsors/qoom.svg'
+import Kuzo from 'images/sponsors/kuzo.png'
+import Bubble from 'images/sponsors/bubble.png'
+
 export default class S05Sponsors extends Component {
     /**
      * Use this for setting the color for hte full section
@@ -72,103 +88,72 @@ export default class S05Sponsors extends Component {
                 background={this.renderBackground}
                 className='sponsor-section'
             >
-                <Heading headingText='Past Sponsors' extra='yellowText'/>
+                <Heading headingText='Sponsors' extra='yellowText'/>
                  <div className='sponsor-container'>
-                        <Link className='sponsor' href="https://cloud.google.com/">
-                            <img src={gcloud} alt='google-cloud'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.lighthouselabs.ca/">
-                            <img src={lighthouseLabs} alt='Lighthouse Labs'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.cse-cst.gc.ca/en">
-                            <img src={CSE} alt='CSE'/>
-                        </Link>
-                        <Link className='sponsor' href="https://mlh.io/">
-                            <img src={MLH} alt='MLH'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.bmo.com/main/personal">
-                            <img src={BMO} alt='BMO'/>
-                        </Link>
-                        <Link className='sponsor' href="https://jumpstart.me/">
-                            <img src={Jumpstart} alt='Jumpstart'/>
-                        </Link>
-                        <Link className='sponsor' href="https://magnet.today/">
-                            <img src={Magnet} alt='Magnet'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.resolver.com/">
-                            <img src={TechDomains} alt='TechDomains'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.foundersbeta.com/">
-                            <img src={FoundersBeta} alt='FoundersBeta'/>
-                        </Link>
-                        <Link className='sponsor' href="https://chainsafe.io/">
-                            <img src={chainsafe} alt='chainsafe'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.itradenetwork.com/">
-                            <img src={iTrade} alt='iTradeNetwork'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.hypercare.com/">
-                            <img src={Hypercare} alt='Hypercare'/>
-                        </Link>
-                        <Link className='sponsor' href="https://balsamiq.com/">
-                            <img src={balsamiq} alt='balsamiq'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.echoar.xyz/">
-                            <img src={echoAR} alt='echoAR'/>
-                        </Link>
-                        <Link className='sponsor' href="https://dmz.ryerson.ca/">
-                            <img src={DMZ} alt='DMZ'/>
-                        </Link>
-                        
                         <Link className='sponsor' href="https://www.ee.ryerson.ca/">
                             <img src={ECE} alt='ECE'/>
                         </Link>
-                        <Link className='sponsor' href="https://www.beam.city/">
-                            <img src={beamCity} alt='beam City'/>
+                        <Link className='sponsor' href="https://distributed.computer/" style={{backgroundColor: 'rgb(11,27,43)'}}>
+                            <img src={DCL} alt='Distributed Computer Labs'/>
                         </Link>
-                        <Link className='sponsor' href="https://www.ryerson.ca/engineering-architectural-science/">
-                            <img src={FEAS} alt='FEAS'/>
+                        <Link className='sponsor' href="https://junocollege.com/">
+                            <img src={Juno} alt='Juno College'/>
                         </Link>
-                        <Link className='sponsor' href="https://www.hackerearth.com/">
-                            <img src={hackerearth} alt='hackerearth'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.ryerson.ca/science/">
-                            <img src={FOS} alt='FOS'/>
-                        </Link>
-                        <Link className='sponsor' href="http://hackp.ac/mlh-stickermule-hackathons">
-                            <img src={StickerMule} alt='StickerMule'/>
-                        </Link>
-                        <Link className='sponsor' href="http://www.rsuonline.ca/">
-                            <img src={RSU} alt='RSU'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.wolfram.com/">
-                            <img src={Wolfram} alt='Wolfram'/>
-                        </Link>
-                        
-                        <Link className='sponsor' href="https://www.brainpower.ca/">
-                            <img src={BrainPower} alt='BrainPower'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.ryerson.ca/cue/clean-energy-zone/">
-                            <img src={CleanEnergyZone} alt='Clean Energy Zone'/>
-                        </Link>
-                        <Link className='sponsor' href="http://www.ieeecanadianfoundation.org/EN/">
-                            <img src={IEEE} alt='IEEE'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.rssonline.ca/">
-                            <img src={RSS} alt='RSS'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.ress.ca/">
-                            <img src={RESS} alt='RESS'/>
-                        </Link>
-                        <Link className='sponsor' href="https://www.resolver.com/">
-                            <img src={Resolver} alt='resolver'/>
+                        <Link className='sponsor' href="https://www.iboostzone.com/">
+                            <img src={iboost} alt='IBoost'/>
                         </Link>
                         <Link className='sponsor' href="https://www.fdmgroup.com/en-ca/ca-home/">
                             <img src={FDM} alt='FDM'/>
                         </Link>
-                        <Link className='sponsor' href="https://www.witm.ca/">
-                            <img src={WITM} alt='WITM'/>
+                        <Link className='sponsor' href="https://www.jetbrains.com/">
+                            <img src={Jetbrains} alt='Jetbrains'/>
                         </Link>
+                        <Link className='sponsor' href="https://www.echoar.xyz/">
+                            <img src={echoAR} alt='echoAR'/>
+                        </Link>
+                        <Link className='sponsor' href="https://balsamiq.com/">
+                            <img src={balsamiq} alt='balsamiq'/>
+                        </Link>
+                        <Link className='sponsor' href="https://cryptochicks.ca/">
+                            <img src={CryptoChicks} alt='CryptoChicks'/>
+                        </Link>
+                        <Link className='sponsor' href="https://mlh.io/">
+                            <img src={MLH} alt='MLH'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.wolfram.com/">
+                            <img src={Wolfram} alt='Wolfram'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.linode.com/">
+                            <img src={Linode} alt='Linode'/>
+                        </Link>
+                        <Link className='sponsor' href="https://1password.com/">
+                            <img src={one_password} alt='One Password'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.voiceflow.com/">
+                            <img src={Voiceflow} alt='Voiceflow'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.storagehotel.ca/">
+                            <img src={storagehotel} alt='Storage Hotel'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.maplesoft.com/" >
+                            <img src={Maplesoft} alt='Maplesoft'/>
+                        </Link>
+                        <Link className='sponsor' href="https://thecodex.me/" style={{backgroundColor: 'black'}}>
+                            <img src={TheCodex} alt='The Codex'/>
+                        </Link>
+                        <Link className='sponsor' href="https://seds.ca/">
+                            <img src={Seds} alt='Students for the Exploration and Development of Space'/>
+                        </Link>
+                        <Link className='sponsor' href="https://www.qoom.io/">
+                            <img src={Qoom} alt='Qoom'/>
+                        </Link>
+                        <Link className='sponsor' href="https://kuzoclass.com/">
+                            <img src={Kuzo} alt='Kuzo'/>
+                        </Link>
+                        <Link className='sponsor' href="https://bubble.io/">
+                            <img src={Bubble} alt='Bubble'/>
+                        </Link>
+                        
                 </div>
             </Section>
         );
