@@ -1,4 +1,3 @@
-import Heading from 'components/Heading';
 import React, { Component } from 'react';
 import Section from '../components/Section';
 
@@ -44,8 +43,8 @@ export default class S03Prev extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
                 className="team-section"
+                title="Our Team"
             >
-                <Heading headingText="Our Team" extra="yellowText" />
                 <div className="team-div">
                     <Team />
                 </div>
