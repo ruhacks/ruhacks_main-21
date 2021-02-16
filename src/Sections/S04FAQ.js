@@ -15,7 +15,7 @@ export default class S04FAQ extends Component {
 
     constructor(props){
         super(props)
-        this.state = {width: 0, height: 0}
+        this.state = {width: window.innerWidth, height: window.innerWidth}
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -59,9 +59,7 @@ export default class S04FAQ extends Component {
     }
 
     shouldComponentUpdate(nextProps, nextState){
-        console.log('currentstate', this.state)
-        console.log('NEXT STATE', nextState)
-        if(nextState.width <= 650 || (this.state.width < nextState.width && nextState.width > 650)){
+        if(nextState.width <= 650 || (this.state.width < nextState.width && nextState.width > 650 && this.state.width <= 650) || this.state.width === 0){
             return true;
         }
         return false;
@@ -70,10 +68,9 @@ export default class S04FAQ extends Component {
     render() {
         const { width } = this.state;
         let pmOpen = true;
-        if(width <= 650){
+        if(width <= 650 && width !== 0){
             pmOpen = false
         }
-        console.log('render', pmOpen)
         return (
             <Section
                 cbackground={this.renderContainerBackground}
@@ -82,9 +79,9 @@ export default class S04FAQ extends Component {
                 <Heading headingText='Frequently Asked Questions' extra='yellowText'/>
                 <div className='faq-container-info'>
                     <InfoBox permanentOpen={pmOpen} infoTitle = {infoBoxTitles.FAQ.whoCanAttend} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.whoCanAttend} textVariant = "h6"/>
-                    <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.howWillIGet} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.howWillIGet} textVariant = "h6" />
+                    <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.whenCanISignUp} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.whenCanISignUp} textVariant = "h6" />
                     <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.cost} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.cost} textVariant = "h6"/>
-                    <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.firstTime} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.firstTime} textVariant = "h6" />
+                    <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.priorExperience} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.priorExperience} textVariant = "h6" />
                     <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.workBeforeEvent} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.workBeforeEvent} textVariant = "h6" />
                     <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.judging} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.judging} textVariant = "h6"/>
                     <InfoBox permanentOpen={pmOpen} infoTitle={infoBoxTitles.FAQ.hardware} titleVariant = "h5" infoText = {infoBoxDescription.FAQAnswers.hardware} textVariant = "h6" />

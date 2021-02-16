@@ -74,6 +74,10 @@ div.banner {
         margin-left: 30%;
         font-family: 'Poppins';
 
+        @media (max-width: 1920px){
+            margin-top: 15%;
+        }
+
         @media (max-width: 800px){
             margin-top: 30%;
             margin-left: 16%;
@@ -164,6 +168,9 @@ div.banner {
     }
     &-newsletter:hover{
         font-size: 32px;
+        @media (max-width: 650px){
+            font-size: 17px
+        }
     }
 }
 
