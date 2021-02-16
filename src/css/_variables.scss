@@ -13,8 +13,8 @@ $secondaryblue: #70b2e6;
 $white: #f1f1f1;
 $orange: #da8541;
 $teal: #4ba3b7;
-$text: rgb(55,74,141);
-$yellow:  #ffdc00;
+$text: rgb(55, 74, 141);
+$yellow: #ffdc00;
 
 #root,
 body {
@@ -30,7 +30,7 @@ body {
     &::-webkit-scrollbar-thumb {
         background-color: #000000;
     }
-    figure{
+    figure {
         user-select: none;
     }
 }
@@ -44,7 +44,8 @@ a {
     }
 }
 
-img, figure{
+img,
+figure {
     overflow: hidden;
     user-select: none;
     -webkit-user-drag: none;
@@ -53,8 +54,6 @@ img, figure{
 
 @mixin container() {
     position: relative;
-    padding-right: 5px;
-    padding-left: 5px;
     margin-right: auto;
     margin-left: auto;
     @media (min-width: 768px) {
@@ -71,5 +70,10 @@ img, figure{
     }
     @media (min-width: 1500px) {
         width: 1450px;
+    }
+}
+@mixin mobileq {
+    @media (max-width: 992px) {
+        @content;
     }
 }
