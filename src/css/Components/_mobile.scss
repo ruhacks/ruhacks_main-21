@@ -1,0 +1,13 @@
+.mobile {
+    &-hide {
+        @include mobileq() {
+            display: none;
+        }
+    }
+    &-show {
+        display: none;
+        @include mobileq() {
+            display: flex;
+        }
+    }
+}
