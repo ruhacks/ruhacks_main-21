@@ -9,11 +9,15 @@
     background-color: rgba(29, 34, 66, 0.95);
     border-radius: 5px;
     padding: 20px;
-    width: 25%;
     position: relative;
     height: fit-content;
     div.inner-box-div.hover {
         cursor: pointer;
+    }
+    &__title {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
     }
 }
 .arrow-hover {
@@ -21,7 +25,6 @@
 }
 
 .arrow-hover {
-    transform: rotate(0deg);
     transition: transform 0.2s linear;
 }
 
@@ -30,7 +33,19 @@
     transition: transform 0.2s linear;
 }
 
-@media screen and (max-width: 650px) {
+// the one in use
+.arrow-click {
+    transition: transform 0.3s linear, top 0.3s;
+    transform: rotate(0deg);
+    position: relative;
+    top: 0;
+    &.open {
+        top: -6px;
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 992px) {
     .section-info {
         width: 100%;
         margin-bottom: 1em;
@@ -42,4 +57,15 @@ hr {
     border: 0;
     border-bottom: solid 2px white;
     margin: 1em 0;
+}
+.inner-box-div {
+    transition: max-height 0.5s;
+    max-height: 0;
+    overflow-y: hidden;
+    &.open {
+        max-height: 350px;
+    }
+}
+.pmopen {
+    max-height: unset !important;
 }

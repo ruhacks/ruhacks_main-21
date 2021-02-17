@@ -13,24 +13,9 @@ export default class InfoBox extends Component {
             hoverPermOpen: false,
         };
     }
-
-    handleOpenInfo = () => {
-        this.setState({
-            open: !this.state.open,
-        });
-    };
-
-    handleMouseEnter = () => {
-        this.setState({
-            hoverOpen: true,
-        });
-    };
-
-    handleMouseExit = () => {
-        this.setState({
-            hoverOpen: false,
-        });
-    };
+    handleOpenInfo = () => this.setState({ open: !this.state.open });
+    handleMouseEnter = () => this.setState({ hoverOpen: true });
+    handleMouseExit = () => this.setState({ hoverOpen: false });
 
     handlePermOpen = () => {
         const { hoverOpen } = this.state;
@@ -48,15 +33,10 @@ export default class InfoBox extends Component {
     shouldComponentUpdate(nextProps, nextState) {
         const { permanentOpen } = nextProps;
         if (this.props.permanentOpen !== permanentOpen) {
-            this.setState({
-                open: true,
-            });
+            this.setState({ open: true });
             return true;
         }
-        if (nextState.open !== this.state.open) {
-            return true;
-        }
-        return false;
+        return nextState.open !== this.state.open;
     }
 
     renderNormalInfoBox = () => {
@@ -64,26 +44,26 @@ export default class InfoBox extends Component {
         const { infoTitle, infoText, permanentOpen, titleVariant, textVariant } = this.props;
         return (
             <div>
-                <Typography variant={titleVariant}>{infoTitle}</Typography>
+                <Typography
+                    variant={titleVariant}
+                    className="section-info__title"
+                    onClick={permanentOpen ? null : this.handleOpenInfo}
+                >
+                    <div>{infoTitle}</div>
+                    {!permanentOpen && (
+                        <div className={`arrow-click ${open && 'open'}`}>
+                            <ArrowUpwardIcon />
+                        </div>
+                    )}
+                </Typography>
                 <hr />
-                {open && (
-                    <div className="inner-box-div">
-                        <Typography variant={textVariant} className="answer">
-                            {infoText}
-                        </Typography>
-                        <hr />
-                        {!permanentOpen && (
-                            <ArrowUpwardIcon
-                                onClick={this.handleOpenInfo}
-                                className="arrow-close-info"
-                            />
-                        )}
-                    </div>
-                )}
 
-                {!open && (
-                    <ArrowDownwardIcon onClick={this.handleOpenInfo} className="arrow-open-info" />
-                )}
+                <div className={`inner-box-div ${open && 'open'} ${permanentOpen ? 'pmopen' : ''}`}>
+                    <Typography variant={textVariant} className="answer">
+                        {infoText}
+                    </Typography>
+                    <hr />
+                </div>
             </div>
         );
     };
@@ -121,7 +101,7 @@ export default class InfoBox extends Component {
         return (
             <div className="section-info">
                 {!hoverMode && this.renderNormalInfoBox()}
-                {hoverMode && this.renderHoverInfoBox()}
+                {/* {hoverMode && this.renderHoverInfoBox()} */}
             </div>
         );
     }

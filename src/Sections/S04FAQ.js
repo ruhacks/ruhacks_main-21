@@ -11,6 +11,7 @@ import { infoBoxTitles, infoBoxDescription } from 'config/Text';
 import ROM from 'images/backgrounds/ROM/ROM.svg';
 import ROM_BACK from 'images/backgrounds/ROM/ROM_BACK.svg';
 
+const WIDTH_TRIGGER = 992;
 export default class S04FAQ extends Component {
     constructor(props) {
         super(props);
@@ -59,10 +60,10 @@ export default class S04FAQ extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         if (
-            nextState.width <= 650 ||
+            nextState.width <= WIDTH_TRIGGER ||
             (this.state.width < nextState.width &&
-                nextState.width > 650 &&
-                this.state.width <= 650) ||
+                nextState.width > WIDTH_TRIGGER &&
+                this.state.width <= WIDTH_TRIGGER) ||
             this.state.width === 0
         ) {
             return true;
@@ -73,7 +74,7 @@ export default class S04FAQ extends Component {
     render() {
         const { width } = this.state;
         let pmOpen = true;
-        if (width <= 650 && width !== 0) {
+        if (width <= WIDTH_TRIGGER && width !== 0) {
             pmOpen = false;
         }
         const { FAQ: FAQQuestions } = infoBoxTitles;

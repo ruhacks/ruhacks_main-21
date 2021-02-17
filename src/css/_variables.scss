@@ -56,6 +56,8 @@ figure {
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    max-width: 100vw;
+    width: 100%;
     @media (min-width: 768px) {
         width: 750px;
     }
