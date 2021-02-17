@@ -47,7 +47,6 @@ class MobileTeam extends Component {
         this.state = { active: -1 };
     }
     render() {
-        console.log(this.state.active);
         return (
             <div className="mteam-con mobile-show">
                 <div className="mteam-list">

@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
 
 export default class Section extends Component {
+    componentDidMount(){
+        const { clickableBackground, clickableCallBack, parentSVG } = this.props;
+        if(clickableBackground && clickableCallBack && parentSVG){
+            const background = document.getElementById(parentSVG)
+            if(background){
+                background.addEventListener('load', () => {
+                    //Temporary for now to get it work for this specific back
+                    const svgDoc = background.contentDocument
+                    const editableElement = svgDoc.getElementById('news_svg')
+                    editableElement.addEventListener('click', clickableCallBack)
+                    
+                    const backElement = svgDoc.getElementsByClassName('cls-175')
+                    backElement[0].addEventListener('click', clickableCallBack)
+
+                    const backElementTwo = svgDoc.getElementsByClassName('cls-174')
+                    backElementTwo[0].addEventListener('click', clickableCallBack)
+                })
+            }
+        }
+    }
     render() {
         return (
             <div className={`section ${this.props.className || ''}`}>

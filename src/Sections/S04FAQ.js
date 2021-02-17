@@ -59,16 +59,13 @@ export default class S04FAQ extends Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        if (
+        return(
             nextState.width <= WIDTH_TRIGGER ||
             (this.state.width < nextState.width &&
                 nextState.width > WIDTH_TRIGGER &&
                 this.state.width <= WIDTH_TRIGGER) ||
             this.state.width === 0
-        ) {
-            return true;
-        }
-        return false;
+        )
     }
 
     render() {
@@ -98,7 +95,7 @@ export default class S04FAQ extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >
-                <Heading headingText="Frequently Asked Questions" extra="yellowText" />
+                <Heading headingText="FAQ" extra="yellowText" />
                 <div className="faq-container-info">
                     {FAQPairs.map(({ q, a }) => {
                         return (
