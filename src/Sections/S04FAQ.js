@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Section from '../components/Section';
 import InfoBox from 'components/InfoBox';
+import Heading from 'components/Heading';
+
 
 import Fade from 'react-reveal/Fade';
 import { Parallax } from 'react-scroll-parallax';
@@ -96,8 +98,8 @@ export default class S04FAQ extends Component {
             <Section
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
-                title="Frequently Asked Quesitions"
             >
+                <Heading headingText="FAQ" extra="yellowText" />
                 <div className="faq-container-info">
                     {FAQPairs.map(({ q, a }) => {
                         return (
