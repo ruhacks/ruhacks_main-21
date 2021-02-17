@@ -30,6 +30,14 @@ export default class Section extends Component {
                 <div className=" cbk section-content ">
                     {this.props.cbackground ? this.props.cbackground() : ''}
                 </div>
+                {this.props.title ? (
+                    <div className="section-title">
+                        <div className="section-title__content">{this.props.title}</div>{' '}
+                    </div>
+                ) : (
+                    ''
+                )}
+
                 <div className="section-content">{this.props.children}</div>
             </div>
         );

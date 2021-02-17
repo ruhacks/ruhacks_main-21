@@ -1,4 +1,3 @@
-import Heading from 'components/Heading';
 import React, { Component } from 'react';
 import Section from '../components/Section';
 import InfoBox from 'components/InfoBox';
@@ -94,8 +93,8 @@ export default class S04FAQ extends Component {
             <Section
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
+                title="Frequently Asked Quesitions"
             >
-                <Heading headingText="FAQ" extra="yellowText" />
                 <div className="faq-container-info">
                     {FAQPairs.map(({ q, a }) => {
                         return (
