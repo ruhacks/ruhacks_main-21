@@ -52,6 +52,7 @@ class MobileTeam extends Component {
                 <div className="mteam-list">
                     {teammembers.map(({ group, members }, i) => (
                         <MobileTeamGroup
+                            key={i}
                             group={group}
                             members={members}
                             active={i === this.state.active}
@@ -72,13 +73,13 @@ class MobileTeamGroup extends Component {
             <div className="mteam-ind__con" key={group}>
                 <div className="mteam-ind__title" onClick={changeGroup}>
                     <div className={`mteam-ind__titlearrow ${active ? 'r' : ''}`}>
-                        <i class="fas fa-caret-right"></i>
+                        <i className="fas fa-caret-right"></i>
                     </div>
                     {group}
                 </div>
                 <div className={`mteam-ind__list ${active ? 'r' : ''}`}>
                     {members.map(({ name, personComponent, description }) => (
-                        <div className="mteam-c">
+                        <div className="mteam-c" key={name}>
                             <div
                                 className="mteam-c__img"
                                 style={{ backgroundImage: `url(${personComponent})` }}

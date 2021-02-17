@@ -105,6 +105,7 @@ export default class S04FAQ extends Component {
                                 titleVariant="h5"
                                 infoText={a}
                                 textVariant="h6"
+                                key={q}
                             />
                         );
                     })}
