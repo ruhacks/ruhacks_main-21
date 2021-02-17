@@ -44,7 +44,7 @@ export default class TeamList extends Component {
 class MobileTeam extends Component {
     constructor(props) {
         super(props);
-        this.state = { active: 1 };
+        this.state = { active: -1 };
     }
     render() {
         console.log(this.state.active);
