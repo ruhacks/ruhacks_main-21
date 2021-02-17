@@ -1,7 +1,7 @@
 .colorSponsorsBack {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #227DF5, #080a15 );
+    background: linear-gradient(to bottom, #227df5, #080a15);
 }
 
 .AGO {
@@ -24,44 +24,44 @@
     overflow: initial;
 }
 
-.sponsor{
+.sponsor {
     width: fit-content;
     height: fit-content;
     margin-right: 1em;
-    
-    &-container{
+
+    &-container {
         display: flex;
         flex-direction: row;
         flex-flow: wrap;
         justify-content: space-between;
-        width: 100%;
+        // width: 100%;
         margin: 0 auto;
         background-color: white;
         padding: 3em;
         margin-top: 3rem;
 
-        @media (max-width: 770px){
+        @media (max-width: 770px) {
             width: 50%;
         }
 
-        a{
+        a {
             padding: 2rem;
         }
 
-        img{
+        img {
             max-width: 300px;
             max-height: 200px;
             display: inline-block;
             vertical-align: middle;
         }
-        @media screen and (max-width: 1300px){
-            img{
+        @media screen and (max-width: 1300px) {
+            img {
                 max-width: 150px;
                 max-height: 100px;
             }
         }
     }
-    &-section{
+    &-section {
         height: fit-content;
         padding-bottom: 10rem;
     }
