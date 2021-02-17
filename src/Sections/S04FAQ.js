@@ -10,6 +10,7 @@ import { infoBoxTitles, infoBoxDescription } from 'config/Text';
 import ROM from 'images/backgrounds/ROM/ROM.svg';
 import ROM_BACK from 'images/backgrounds/ROM/ROM_BACK.svg';
 
+const WIDTH_TRIGGER = 992;
 export default class S04FAQ extends Component {
     constructor(props) {
         super(props);
@@ -58,10 +59,10 @@ export default class S04FAQ extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         if (
-            nextState.width <= 650 ||
+            nextState.width <= WIDTH_TRIGGER ||
             (this.state.width < nextState.width &&
-                nextState.width > 650 &&
-                this.state.width <= 650) ||
+                nextState.width > WIDTH_TRIGGER &&
+                this.state.width <= WIDTH_TRIGGER) ||
             this.state.width === 0
         ) {
             return true;
@@ -72,9 +73,25 @@ export default class S04FAQ extends Component {
     render() {
         const { width } = this.state;
         let pmOpen = true;
-        if (width <= 650 && width !== 0) {
+        if (width <= WIDTH_TRIGGER && width !== 0) {
             pmOpen = false;
         }
+        const { FAQ: FAQQuestions } = infoBoxTitles;
+        const { FAQAnswers } = infoBoxDescription;
+        const FAQTitles = [
+            'whoCanAttend',
+            'whenCanISignUp',
+            'cost',
+            'priorExperience',
+            'workBeforeEvent',
+            'judging',
+            'hardware',
+            'maxTeam',
+            'more',
+        ];
+        const FAQPairs = FAQTitles.map((f) => {
+            return { q: FAQQuestions[f], a: FAQAnswers[f] };
+        });
         return (
             <Section
                 cbackground={this.renderContainerBackground}
@@ -82,69 +99,17 @@ export default class S04FAQ extends Component {
                 title="Frequently Asked Quesitions"
             >
                 <div className="faq-container-info">
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.whoCanAttend}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.whoCanAttend}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.whenCanISignUp}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.whenCanISignUp}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.cost}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.cost}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.priorExperience}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.priorExperience}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.workBeforeEvent}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.workBeforeEvent}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.judging}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.judging}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.hardware}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.hardware}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.maxTeam}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.maxTeam}
-                        textVariant="h6"
-                    />
-                    <InfoBox
-                        permanentOpen={pmOpen}
-                        infoTitle={infoBoxTitles.FAQ.more}
-                        titleVariant="h5"
-                        infoText={infoBoxDescription.FAQAnswers.more}
-                        textVariant="h6"
-                    />
+                    {FAQPairs.map(({ q, a }) => {
+                        return (
+                            <InfoBox
+                                permanentOpen={pmOpen}
+                                infoTitle={q}
+                                titleVariant="h5"
+                                infoText={a}
+                                textVariant="h6"
+                            />
+                        );
+                    })}
                 </div>
             </Section>
         );
