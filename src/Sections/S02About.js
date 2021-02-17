@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Section from 'components/Section';
 import InfoBox from 'components/InfoBox';
+import Heading from 'components/Heading';
 
 import Fade from 'react-reveal/Fade';
 import { Parallax } from 'react-scroll-parallax';
@@ -43,8 +44,8 @@ export default class S02About extends Component {
             <Section
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
-                title={<div className="section-title__contentOnWhite">About RU Hacks</div>}
-            >
+            >   
+                <Heading headingText="About RU Hacks" extra="yellowText" />
                 <div className="rules-container-info">
                     <InfoBox
                         infoTitle={infoBoxTitles.About.whatIs}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Section from '../components/Section';
+import Heading from 'components/Heading';
 
 import { Parallax } from 'react-scroll-parallax';
 import Fade from 'react-reveal/Fade';
@@ -89,8 +90,8 @@ export default class S05Sponsors extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
                 className="sponsor-section"
-                title="Sponsors"
             >
+                <Heading headingText='Sponsors' extra='yellowText'/>
                 <div className="sponsor-container">
                     <Link className="sponsor" href="https://www.ee.ryerson.ca/">
                         <img src={ECE} alt="ECE" />

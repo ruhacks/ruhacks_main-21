@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Section from '../components/Section';
+import Heading from 'components/Heading';
 
 import Fade from 'react-reveal/Fade';
 import { Parallax } from 'react-scroll-parallax';
@@ -43,8 +44,8 @@ export default class S03Prev extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
                 className="team-section"
-                title="Our Team"
             >
+                <Heading headingText="Our Team" extra="yellowText" />
                 <div className="team-div">
                     <Team />
                 </div>
