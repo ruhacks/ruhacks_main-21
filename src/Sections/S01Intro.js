@@ -16,7 +16,8 @@ export default class S01Intro extends Component {
         super(props)
 
         this.state = {
-            toggleModal: false
+            toggleModal: false,
+            background: false,
         }
         this.toggleOpenModal = this.toggleOpenModal.bind(this)
     }
@@ -43,7 +44,7 @@ export default class S01Intro extends Component {
     renderContainerBackground() {
         return (
         <div className='bannerBack'>
-            <img className="DSQ " src={DSQ} alt='Dundas Square'/>
+            <object className="DSQ" id='DSQ' aria-label='Dundas Square' data={DSQ} alt='Dundas Square' type="image/svg+xml"/>
             <img className="cloud cloud-left" src={cloud} alt='Cloud'/>
             <img className="cloud cloud-left" src={cloud2} alt='Cloud'/>
             <img className="cloud cloud-left" src={cloud3} alt='Cloud'/>
@@ -77,6 +78,9 @@ export default class S01Intro extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
                 className='banner'
+                clickableBackground = {'news_svg'}
+                clickableCallBack = {this.toggleOpenModal}
+                parentSVG={'DSQ'}
             >
                 {this.renderIntro()}
                 <SignupModal open={toggleModal}/>

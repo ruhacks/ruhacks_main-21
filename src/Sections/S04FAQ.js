@@ -60,16 +60,13 @@ export default class S04FAQ extends Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        if (
+        return(
             nextState.width <= WIDTH_TRIGGER ||
             (this.state.width < nextState.width &&
                 nextState.width > WIDTH_TRIGGER &&
                 this.state.width <= WIDTH_TRIGGER) ||
             this.state.width === 0
-        ) {
-            return true;
-        }
-        return false;
+        )
     }
 
     render() {
@@ -109,6 +106,7 @@ export default class S04FAQ extends Component {
                                 titleVariant="h5"
                                 infoText={a}
                                 textVariant="h6"
+                                key={q}
                             />
                         );
                     })}

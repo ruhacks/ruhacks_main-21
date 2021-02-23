@@ -760,10 +760,12 @@
 
             .cls-174 {
                 fill: #d3e9f7;
+                cursor: pointer;
             }
 
             .cls-175 {
                 fill: #b4dffc;
+                cursor: pointer;
             }
 
             .cls-176 {
@@ -838,7 +840,8 @@
             #news_svg{
                 animation-name: wiggleWiggle;
                 animation-duration: 2.5s;
-                animation-iteration-count: infinite
+                animation-iteration-count: infinite;
+                cursor: pointer;
             }
 
             @keyframes fadingColor {

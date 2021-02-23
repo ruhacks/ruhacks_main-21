@@ -25,7 +25,7 @@ export const infoBoxDescription = {
         whoCanAttend: 'If you are a student enrolled in any high school or post secondary institution, you are eligible to apply and attend RU Hacks. ',
         whenCanISignUp: 'RU Hacks 2021 will be fully virtual due to COVID-19, and will take place April 30th - May 2nd. Registration will be released in mid-March, so stay tuned for more information!',
         cost: 'Admission to RU Hacks is completely free!',
-        priorExperience: 'No, prior coding or technical experience is not necessary. RU Hacks is a fun learning experience where we’ll be hosting beginner workshops, talks and mentors to guide you with through projects.',
+        priorExperience: 'No, prior coding or technical experience is not necessary. RU Hacks is a fun learning experience where we’ll be hosting beginner workshops, talks and mentors to guide you through projects.',
         workBeforeEvent: "No, we do not allow participants to work on pre-existing projects. RU Hacks hackers are required to start and complete their project during the hackathon. However, you are welcome to familiarize yourself with specific tools and technologies beforehand!",
         hardware: 'You are welcome to create a hardware hack, but we ask that you respect COVID-19 restrictions while doing so. More information will be released closer to the hackathon.',
         maxTeam: 'A single team can consist of 1 to 4 people. If you are looking to find other hackers to compete alongside, we encourage you to join our Team Formation session at the start of the hackathon on the RU Hacks 2021 Discord! ',

@@ -8,11 +8,12 @@
         display: flex;
         margin-top: 5%;
         // width: 100%;
+        height: fit-content;
         background-color: rgba(255, 255, 255, 0.295);
         overflow-x: auto;
         padding: 30px;
         @include mobileq {
-            height: 780px;
+            height: fit-content;
             overflow-x: hidden;
         }
     }

@@ -45,7 +45,7 @@ export default class S02About extends Component {
                 cbackground={this.renderContainerBackground}
                 background={this.renderBackground}
             >   
-                <Heading headingText="About RU Hacks"/>
+                <Heading headingText="About RU Hacks" />
                 <div className="rules-container-info">
                     <InfoBox
                         infoTitle={infoBoxTitles.About.whatIs}
