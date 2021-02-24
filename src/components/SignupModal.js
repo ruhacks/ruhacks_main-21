@@ -2,7 +2,17 @@ import React from 'react';
 import { Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core'
 import axios from "axios";
 
-const API_URL = 'http://localhost:5000/signup'
+let API_URL = ''
+ 
+
+console.log(process.env.NODE_ENV)
+if(process.env.NODE_ENV === 'development'){
+    API_URL = 'http://localhost:5000/signup'
+}else if(process.env.NODE_ENV === 'production'){
+    API_URL = 'https://api.ruhacks.com/signup'
+}
+
+
 
 
 

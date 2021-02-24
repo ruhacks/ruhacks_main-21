@@ -81,7 +81,7 @@ export default class InfoBox extends Component {
                 onMouseOver={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseExit}
             >
-                <Typography variant={titleVariant}>{infoTitle}</Typography>
+                <Typography variant={titleVariant} align='left'>{infoTitle}</Typography>
                 <hr />
                 {(hoverOpen || hoverPermOpen) && (
                     <div>

@@ -12,6 +12,7 @@ import {
     Slide,
     Toolbar,
     useScrollTrigger,
+    SwipeableDrawer,
 } from '@material-ui/core';
 import { ChevronRight, Email, Menu } from '@material-ui/icons';
 
@@ -93,6 +94,8 @@ export default class Header extends Component {
     }
 
     renderMobileVersion() {
+        const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
+
         return (
             <div className="mobile-heading">
                 <HideOnScroll {...this.props}>
@@ -104,28 +107,28 @@ export default class Header extends Component {
                                     aria-label="open drawer"
                                     onClick={this.handleDrawerOpen}
                                     edge="start"
-                                    className={() => {
-                                        if (this.state.openDrawer) {
-                                            return 'iconButton-open';
-                                        } else {
-                                            return 'iconButton-closed';
-                                        }
-                                    }}
+                                    id="materialIconOpenDrawerButton"
+                                    style={{cursor:'pointer'}}
+                                    className={this.state.openDrawer ? 'iconButton-open' : 'iconButton-closed'}
                                 >
-                                    <Menu />
+                                    <Menu style={{cursor:'pointer'}}/>
                                 </IconButton>
-                                <Link href="#" className="mobile-logo" variant="body1">
+                                <Link href="#" className="mobile-logo" variant="body1" style={{cursor:'pointer'}}>
                                     <img src={whiteLogo} className="navLogo" alt="RU Hacks" />
                                 </Link>
                             </div>
                         </Toolbar>
                     </AppBar>
                 </HideOnScroll>
-                <Drawer
+                <SwipeableDrawer
                     className="mobile-drawer"
-                    variant="persistent"
                     anchor="left"
                     open={this.state.openDrawer}
+                    onOpen={this.handleDrawerOpen}
+                    onClose={this.handleDrawerClose}
+                    disableBackdropTransition={!iOS}
+                    disableDiscovery={iOS}
+                    hysteresis={0.1}
                 >
                     <div className="mobile-drawer-header">
                         <IconButton onClick={this.handleDrawerClose}>
@@ -138,12 +141,34 @@ export default class Header extends Component {
                             button
                             component="button"
                             onClick={this.toggleOpenModal}
-                            key={'facebook'}
+                            key={'newsletter'}
                         >
                             <ListItemIcon>
-                                <Email />
+                                <i className="fas fa-newspaper fa-lg"></i>
                             </ListItemIcon>
                             <ListItemText>Sign Up for our newsletter</ListItemText>
+                        </ListItem>
+                        <ListItem
+                            button
+                            component="button"
+                            href={'https://forms.gle/JaHdS8ecdabYq2RK9'}
+                            key={'mentors'}
+                        >
+                            <ListItemIcon>
+                                <i className="fas fa-hands-helping fa-lg"></i>
+                            </ListItemIcon>
+                            <ListItemText>Mentors Sign Up</ListItemText>
+                        </ListItem>
+                        <ListItem
+                            button
+                            component="button"
+                            href={'https://forms.gle/e7SjWAVAmPdxASjz7'}
+                            key={'workshop'}
+                        >
+                            <ListItemIcon>
+                                <i className="fa fa-calendar-check fa-lg"></i>
+                            </ListItemIcon>
+                            <ListItemText>Workshop Hosting Signup</ListItemText>
                         </ListItem>
                     </List>
                     <Divider />
@@ -190,7 +215,7 @@ export default class Header extends Component {
                             alt="MLH Official 2021 Season"
                         />
                     </Link>
-                </Drawer>
+                </SwipeableDrawer>
             </div>
         );
     }

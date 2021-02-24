@@ -79,3 +79,13 @@ figure {
         @content;
     }
 }
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px $primaryblue, 0 0 4px $primaryblue, 0 0 5px $primaryblue, 0 0 6px $primaryblue, 0 0 7px $primaryblue;
+    }
+    
+    to {
+      text-shadow: 0 0 2px #fff, 0 0 3px $secondaryblue, 0 0 4px $secondaryblue, 0 0 5px $secondaryblue, 0 0 6px $secondaryblue, 0 0 7px $secondaryblue, 0 0 8px $secondaryblue;
+    }
+  }

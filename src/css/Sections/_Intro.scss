@@ -34,6 +34,10 @@
     padding-top: 5rem;
     z-index: 500;
 
+    @media (max-width: 1366px){
+        width: 100%;
+        transform: translate(-50%, 5%);
+    }
 
     @media (max-width: 800px){
         transform: translate(-50%, 8%);
@@ -78,18 +82,16 @@ div.banner {
             margin-top: 15%;
         }
 
-        @media (max-width: 800px){
-            margin-top: 30%;
-            margin-left: 16%;
-        }
+        
 
-        @media (max-width: 400px){
-            margin-top: 60%;
+        @media (max-width: 800px){
+            margin-top: 20%;
             margin-left: 16%;
         }
 
         @media (max-width: 566px){
             flex-flow: wrap;
+            margin-top: 10%;
         }
     }
     
@@ -141,7 +143,7 @@ div.banner {
             font-size: 50px;
         }
         @media (max-width: 650px){
-            font-size: 35px
+            font-size: 45px
         }
     }
     &-slogan {
@@ -153,21 +155,26 @@ div.banner {
             font-size: 40px;
         }
         @media (max-width: 650px){
-            font-size: 25px
+            font-size: 35px
         }
     }
-    &-socials {
-    }
+
     &-newsletter{
         line-height: initial;
         font-size: 30px;
+        font-family: 'Poppins';
         cursor: pointer;
+        margin: 0.1em;
+        text-shadow:  0 1px $primaryblue, 0 1.5px rgb(0, 114, 180), 0 2px #70b2e6;
+        font-weight: 100;
+        transition: 0.3s;
         @media (max-width: 650px){
-            font-size: 15px
+            font-size: 20px
         }
     }
     &-newsletter:hover{
         font-size: 32px;
+        text-shadow: 0 1px $primaryblue, 0 2px rgb(0, 114, 180), 0 3px rgb(0, 114, 180), 0 4px #70b2e6;
         @media (max-width: 650px){
             font-size: 17px
         }

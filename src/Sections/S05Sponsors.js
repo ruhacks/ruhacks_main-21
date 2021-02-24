@@ -59,6 +59,7 @@ import Seds from 'images/sponsors/seds.png';
 import Qoom from 'images/sponsors/qoom.svg';
 import Kuzo from 'images/sponsors/kuzo.png';
 import Bubble from 'images/sponsors/bubble.png';
+import RECESS from 'images/sponsors/RECESS.png'
 
 export default class S05Sponsors extends Component {
     /**
@@ -105,6 +106,9 @@ export default class S05Sponsors extends Component {
                     </Link>
                     <Link className="sponsor" href="https://junocollege.com/">
                         <img src={Juno} alt="Juno College" />
+                    </Link>
+                    <Link className="sponsor" href="https://www.ee.ryerson.ca/~recess/">
+                        <img src={RECESS} alt="RECESS Ryerson Electrical and Computer Engineering Student Society " />
                     </Link>
                     <Link className="sponsor" href="https://www.iboostzone.com/">
                         <img src={iboost} alt="IBoost" />
