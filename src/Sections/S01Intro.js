@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Section from "../components/Section";
-import DSQ from 'images/backgrounds/DSQ/DSQ_IMGS.svg';
+import DSQ from 'images/backgrounds/DSQ/DSQ.svg';
 
 import EggwardSitting from 'images/eggward/sit.png';
 import cloud from 'images/cloud.png';
