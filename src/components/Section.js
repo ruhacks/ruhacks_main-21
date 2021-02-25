@@ -12,7 +12,7 @@ export default class Section extends Component {
                     const editableElement = svgDoc.getElementById('news_svg')
                     editableElement.addEventListener('click', clickableCallBack)
                     
-                    const backElement = svgDoc.getElementsByClassName('cls-175')
+                    const backElement = svgDoc.getElementsByClassName('cls-173')
                     backElement[0].addEventListener('click', clickableCallBack)
 
                     const backElementTwo = svgDoc.getElementsByClassName('cls-174')

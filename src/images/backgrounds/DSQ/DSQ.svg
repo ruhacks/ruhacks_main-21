@@ -759,14 +759,17 @@
 
             .cls-173 {
                 fill: #d3e9f7;
+                cursor: pointer;
             }
 
             .cls-174 {
                 fill: #b4dffc;
+                cursor: pointer;
             }
 
             .cls-175 {
                 font-size: 36px;
+
             }
 
             .cls-175,
@@ -803,6 +806,10 @@
             .cls-182,
             .cls-183 {
                 fill: #ffdc00;
+                stroke: #fff;
+                animation-name: fadingColor;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
             }
 
             .cls-183 {

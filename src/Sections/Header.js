@@ -13,6 +13,7 @@ import {
     Toolbar,
     useScrollTrigger,
     SwipeableDrawer,
+    Button,
 } from '@material-ui/core';
 import { ChevronRight, Email, Menu } from '@material-ui/icons';
 
@@ -79,6 +80,17 @@ export default class Header extends Component {
                             <Link href="#" variant="body1">
                                 <img src={whiteLogo} className="navLogo" alt="RU Hacks" />
                             </Link>
+                            <Button
+                                target="_blank"
+                                href="https://ruhacks.com/sponsorship"
+                                className='header-button'
+                                variant='outlined'
+                                color='inherit'
+                                size="large"
+                                style= {{marginLeft: 'auto', marginRight: '10%'}}
+                            >
+                                Sponsor Us!
+                            </Button>
                             <Link href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white">
                                 <img
                                     src={MLH}
@@ -157,7 +169,7 @@ export default class Header extends Component {
                             <ListItemIcon>
                                 <i className="fas fa-hands-helping fa-lg"></i>
                             </ListItemIcon>
-                            <ListItemText>Mentors Sign Up</ListItemText>
+                            <ListItemText>Mentors sign up</ListItemText>
                         </ListItem>
                         <ListItem
                             button
@@ -168,7 +180,19 @@ export default class Header extends Component {
                             <ListItemIcon>
                                 <i className="fa fa-calendar-check fa-lg"></i>
                             </ListItemIcon>
-                            <ListItemText>Workshop Hosting Signup</ListItemText>
+                            <ListItemText>Host a Workshop</ListItemText>
+                        </ListItem>
+                        <ListItem
+                            button
+                            component="button"
+                            href={'https://ruhacks.com/sponsorship'}
+                            target="_blank"
+                            key={'sponsor'}
+                        >
+                            <ListItemIcon>
+                                <i class="fas fa-briefcase fa-lg"></i>
+                            </ListItemIcon>
+                            <ListItemText>Sponsor Us</ListItemText>
                         </ListItem>
                     </List>
                     <Divider />
