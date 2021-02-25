@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
     AppBar,
-    Drawer,
     Divider,
     IconButton,
     Link,
@@ -15,7 +14,7 @@ import {
     SwipeableDrawer,
     Button,
 } from '@material-ui/core';
-import { ChevronRight, Email, Menu } from '@material-ui/icons';
+import { ChevronRight, Menu } from '@material-ui/icons';
 
 import whiteLogo from '../images/RU_white.png';
 import MLH from 'images/logos/mlh.svg';
