@@ -168,7 +168,7 @@ let teammembers = [
             },
             {
                 name: 'Sam',
-                description: 'Dishonorably Discharged',
+                description: 'Freelancer',
                 personComponent: Sam,
             },
         ],
