@@ -65,6 +65,7 @@ export default class S01Intro extends Component {
                 <div className="intro-text">
                     <div className="intro-hackathon">RU Hacks 2021</div>
                     <div className="intro-slogan">Digitally Together!</div>
+                    <div className="intro-date">April 30 - May 2</div>
                     <a href="https://forms.gle/JaHdS8ecdabYq2RK9"><div className="intro-newsletter" >{">"} Become a Mentor</div></a>
                     <a href="https://forms.gle/e7SjWAVAmPdxASjz7"><div className="intro-newsletter" > {">"} Host a Workshop</div></a>
                     <div className="intro-newsletter" onClick={this.toggleOpenModal}> {">"} Signup for our Newsletter</div>
