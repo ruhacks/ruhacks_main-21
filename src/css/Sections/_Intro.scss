@@ -74,16 +74,13 @@ div.banner {
         color: white;
         display: flex;
         position: relative;
-        margin-top:25%;
+        margin-top:20%;
         margin-left: 30%;
         font-family: 'Poppins';
 
         @media (max-width: 1920px){
             margin-top: 15%;
         }
-
-        
-
         @media (max-width: 800px){
             margin-top: 20%;
             margin-left: 16%;
@@ -156,6 +153,20 @@ div.banner {
         }
         @media (max-width: 650px){
             font-size: 35px
+        }
+    }
+
+    &-date{
+        font-size: 45px;
+
+        @media (max-width: 1300px){
+            font-size: 35px;
+        }
+        @media (max-width: 992px){
+            font-size: 25px;
+        }
+        @media (max-width: 650px){
+            font-size: 20px
         }
     }
 
