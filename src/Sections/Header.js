@@ -151,6 +151,17 @@ export default class Header extends Component {
                         <ListItem
                             button
                             component="button"
+                            href={'https://app.ruhacks.com/'}
+                            key={'mentors'}
+                        >
+                            <ListItemIcon>
+                                <i class="fas fa-laptop-code fa-lg"></i>
+                            </ListItemIcon>
+                            <ListItemText>Hackers Sign up</ListItemText>
+                        </ListItem>
+                        <ListItem
+                            button
+                            component="button"
                             onClick={this.toggleOpenModal}
                             key={'newsletter'}
                         >
