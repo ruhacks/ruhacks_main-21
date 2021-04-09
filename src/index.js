@@ -33,6 +33,11 @@ let theme = createMuiTheme({
         h3: {
             fontSize: '4rem'
         },
+        fontFamily: [
+            "Comic Sans MS",
+            "Comic Sans",
+            "cursive",
+        ]
     }
 });
 

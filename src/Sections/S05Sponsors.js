@@ -33,11 +33,12 @@ import Hypercare from 'images/sponsors/Hypercare.png'
 import beamCity from 'images/sponsors/Beamcity_logo.png'
 import FEAS from 'images/sponsors/FEAS.png'
 import FOS from 'images/sponsors/ryerson-faculty-of-science-logo.png'
-import StickerMule from 'images/sponsors/stickermule.svg'
 import RSU from 'images/sponsors/rsu.png'
 import DMZ from 'images/sponsors/DMZ.png'
 import RESS from 'images/sponsors/ress.png' */
 
+import gcloud from 'images/sponsors/googlecloud.png'
+import StickerMule from 'images/sponsors/stickermule.png'
 import MLH from 'images/sponsors/mlh-logo-color.png';
 import balsamiq from 'images/sponsors/balsamiq.svg';
 import echoAR from 'images/sponsors/echoAR.png';
@@ -94,6 +95,9 @@ export default class S05Sponsors extends Component {
             >
                 <Heading headingText='Sponsors' extra='yellowText'/>
                 <div className="sponsor-container">
+                    <Link className="sponsor" href="https://cloud.google.com/">
+                        <img src={gcloud} alt="Google Cloud" />
+                    </Link>
                     <Link className="sponsor" href="https://www.ee.ryerson.ca/">
                         <img src={ECE} alt="ECE" />
                     </Link>
@@ -106,6 +110,9 @@ export default class S05Sponsors extends Component {
                     </Link>
                     <Link className="sponsor" href="https://junocollege.com/">
                         <img src={Juno} alt="Juno College" />
+                    </Link>
+                    <Link className="sponsor" href="http://hackp.ac/mlh-stickermule-hackathons">
+                        <img src={StickerMule} alt="Sticker Mule" />
                     </Link>
                     <Link className="sponsor" href="https://www.ee.ryerson.ca/~recess/">
                         <img src={RECESS} alt="RECESS Ryerson Electrical and Computer Engineering Student Society " />

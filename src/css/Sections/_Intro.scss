@@ -76,7 +76,7 @@ div.banner {
         position: relative;
         margin-top:20%;
         margin-left: 30%;
-        font-family: 'Poppins';
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
 
         @media (max-width: 1920px){
             margin-top: 15%;
@@ -93,7 +93,7 @@ div.banner {
     }
     
     &-text {
-        font-family: 'Poppins';
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -173,7 +173,7 @@ div.banner {
     &-newsletter{
         line-height: initial;
         font-size: 25px;
-        font-family: 'Poppins';
+        font-family: "Comic Sans MS", "Comic Sans", cursive;;
         cursor: pointer;
         margin: 0.1em;
         text-shadow:  0 1px $primaryblue, 0 1.5px rgb(0, 114, 180), 0 2px #70b2e6;
@@ -186,7 +186,7 @@ div.banner {
     &-apply{
         line-height: initial;
         font-size: 40px;
-        font-family: 'Poppins';
+        font-family: "Comic Sans MS", "Comic Sans", cursive;;
         cursor: pointer;
         margin: 0.1em;
         text-shadow:  0 1px $primaryblue, 0 1.5px rgb(0, 114, 180), 0 2px #70b2e6;
