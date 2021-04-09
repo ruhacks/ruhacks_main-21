@@ -25,13 +25,13 @@ let theme = createMuiTheme({
     },
     typography: {
         h1: {
-            fontSize: '8rem'
+            fontSize: '7rem'
         },
         h2 : {
-            fontSize: '6rem'
+            fontSize: '5rem'
         },
         h3: {
-            fontSize: '4rem'
+            fontSize: '3rem'
         },
     }
 });
