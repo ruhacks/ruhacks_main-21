@@ -20,6 +20,8 @@ import whiteLogo from '../images/RU_white.png';
 import MLH from 'images/logos/mlh.svg';
 import MLHBLue from 'images/logos/mlh-blue.svg';
 import SignupModal from 'components/SignupModal';
+import Pinnacle from 'images/PinnacleBadge_BoW_PinBadge.png';
+import PinnacleDark from 'images/PinnacleBadge_WoB_PinBadge.png';
 
 // Deprecated - Use title prop in section
 export default class Header extends Component {
@@ -96,6 +98,13 @@ export default class Header extends Component {
                                     className="header-mlh"
                                     alt="MLH Official 2021 Season"
                                 ></img>
+                            </Link>
+                            <Link href="https://pinnacle.us.org/">
+                                <img
+                                    src={Pinnacle}
+                                    className="header-Pinnacle"
+                                    alt="Pinnacle Hackathon"
+                                    />
                             </Link>
                         </div>
                     </Toolbar>
@@ -242,13 +251,22 @@ export default class Header extends Component {
                         </ListItem>
                     </List>
                     <Divider />
-                    <Link href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white">
-                        <img
-                            src={MLHBLue}
-                            className="header-mlh-mobile"
-                            alt="MLH Official 2021 Season"
-                        />
-                    </Link>
+                    <div className="header-badge-mobile">
+                        <Link href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white">
+                            <img
+                                src={MLHBLue}
+                                className="header-mlh-mobile"
+                                alt="MLH Official 2021 Season"
+                            />
+                        </Link>
+                        <Link href="https://pinnacle.us.org/">
+                                    <img
+                                        src={PinnacleDark}
+                                        className="header-Pinnacle-mobile"
+                                        alt="Pinnacle Hackathon"
+                                        />
+                        </Link>
+                    </div>
                 </SwipeableDrawer>
             </div>
         );

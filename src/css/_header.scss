@@ -56,10 +56,24 @@
         right: 0;
         top: 0;
     }
+    &-Pinnacle {
+        width: 70px;
+        position: absolute;
+        left: 102%;
+        top: 0;
+    }
+    &-badge-mobile{
+        text-align: center;
+    }
     &-mlh-mobile{
         position: relative;
-        width: 50%;
-        margin-left: 25%;
+        width: 80px;
+    }
+    &-Pinnacle-mobile{
+        position: relative;
+        width: 70px;
+        top: -35px;
+        padding-left: 1.5em;
     }
 }
 

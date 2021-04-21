@@ -64,6 +64,8 @@ import Qoom from 'images/sponsors/qoom.svg';
 import Bubble from 'images/sponsors/bubble.png';
 import RECESS from 'images/sponsors/RECESS.png'
 import EF from "images/sponsors/Entrepreneur_first.png"
+import FOS from 'images/sponsors/ryerson-faculty-of-science-logo.png';
+import RSS from 'images/sponsors/ryerson-science-society.png'
 
 export default class S05Sponsors extends Component {
     /**
@@ -147,6 +149,12 @@ export default class S05Sponsors extends Component {
                     </Link>
                     <Link className="sponsor" href="https://www.wolfram.com/">
                         <img src={Wolfram} alt="Wolfram" />
+                    </Link>
+                    <Link className="sponsor" href="https://www.ryerson.ca/science/">
+                        <img src={FOS} alt="Ryerson Faculty of Science" />
+                    </Link>
+                    <Link className="sponsor" href="https://www.rssonline.ca/">
+                        <img src={RSS} alt="Ryesron Science Society" />
                     </Link>
                     <Link className="sponsor" href="https://www.linode.com/">
                         <img src={Linode} alt="Linode" />
